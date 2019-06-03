@@ -181,21 +181,21 @@
 					<type>float</type>
 					<init>0.100</init>
 					<min value="0.0"/>
-					<max value="0.40"/>
+					<max value="0.30"/>
 					<description>maximum height that character steps vertically (above 0.2 is high...but ok for say underwater)</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>stepHeightInc4Step</name>
 					<type>float</type>
-					<init>0.100</init>
+					<init>0.200</init>
 					<min value="0.0"/>
-					<max value="0.40"/>
+					<max value="0.70"/>
 					<description>added to stepHeight if going up steps</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>legsApartRestep</name>
 					<type>float</type>
-					<init>0.200</init>
+					<init>0.100</init>
 					<min value="0.0"/>
 					<max value="1.00"/>
 					<description>if the legs end up more than (legsApartRestep + hipwidth) apart even though balanced, take another step</description>
@@ -203,7 +203,7 @@
 				<Item type="rage__NMParam">
 					<name>legsTogetherRestep</name>
 					<type>float</type>
-					<init>1.0</init>
+					<init>0.2</init>
 					<min value="0.0"/>
 					<max value="1.00"/>
 					<description>mmmm0.1 for drunk if the legs end up less than (hipwidth - legsTogetherRestep) apart even though balanced, take another step.  A value of 1 will turn off this feature and the max value is hipWidth = 0.23f by default but is model dependent</description>
@@ -233,7 +233,7 @@
 				<Item type="rage__NMParam">
 					<name>leftLegSwingDamping</name>
 					<type>float</type>
-					<init>1.000</init>
+					<init>0.200</init>
 					<min value="0.20"/>
 					<max value="4.0"/>
 					<description>damping of left leg during swing phase (mmmmDrunk used 1.25 to slow legs movement)</description>
@@ -241,7 +241,7 @@
 				<Item type="rage__NMParam">
 					<name>rightLegSwingDamping</name>
 					<type>float</type>
-					<init>1.000</init>
+					<init>0.200</init>
 					<min value="0.20"/>
 					<max value="4.0"/>
 					<description>damping of right leg during swing phase (mmmmDrunk used 1.25 to slow legs movement)</description>
@@ -257,7 +257,7 @@
 				<Item type="rage__NMParam">
 					<name>opposeGravityAnkles</name>
 					<type>float</type>
-					<init>1.000</init>
+					<init>0.000</init>
 					<min value="0.00"/>
 					<max value="4.0"/>
 					<description>Gravity opposition applied to ankles.  General balancer likes 1.0.  StaggerFall likes 0.1</description>
@@ -273,7 +273,7 @@
 				<Item type="rage__NMParam">
 					<name>hipLeanAcc</name>
 					<type>float</type>
-					<init>0.50</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="1.0"/>
 					<description>Multiplier on the floorAcceleration added to the leanHips</description>
@@ -281,7 +281,7 @@
 				<Item type="rage__NMParam">
 					<name>leanAccMax</name>
 					<type>float</type>
-					<init>5.000</init>
+					<init>0.000</init>
 					<min value="0.00"/>
 					<max value="10.0"/>
 					<description>Max floorAcceleration allowed for lean and leanHips</description>
@@ -289,7 +289,7 @@
 				<Item type="rage__NMParam">
 					<name>resistAcc</name>
 					<type>float</type>
-					<init>0.50</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="2.0"/>
 					<description>Level of cheat force added to character to resist the effect of floorAcceleration (anti-Acceleration) - added to upperbody.</description>
@@ -297,7 +297,7 @@
 				<Item type="rage__NMParam">
 					<name>resistAccMax</name>
 					<type>float</type>
-					<init>3.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="20.0"/>
 					<description>Max floorAcceleration allowed for anti-Acceleration. If  GT 20.0 then it is probably in a crash</description>
@@ -305,13 +305,13 @@
 				<Item type="rage__NMParam">
 					<name>footSlipCompOnMovingFloor</name>
 					<type>bool</type>
-					<init>true</init>
+					<init>false</init>
 					<description>This parameter will be removed when footSlipCompensation preserves the foot angle on a moving floor]. If the character detects a moving floor and footSlipCompOnMovingFloor is false then it will turn off footSlipCompensation - at footSlipCompensation preserves the global heading of the feet.  If footSlipCompensation is off then the character usually turns to the side in the end although when turning the vehicle turns it looks promising for a while</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>ankleEquilibrium</name>
 					<type>float</type>
-					<init>0.000</init>
+					<init>1.000</init>
 					<min value="-1.00"/>
 					<max value="1.0"/>
 					<description>ankle equilibrium angle used when static balancing</description>
@@ -334,7 +334,7 @@
 				<Item type="rage__NMParam">
 					<name>balanceAbortThreshold</name>
 					<type>float</type>
-					<init>0.600</init>
+					<init>0.60</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>when the character gives up and goes into a fall.  Larger values mean that the balancer can lean more before failing.</description>
@@ -366,7 +366,7 @@
 				<Item type="rage__NMParam">
 					<name>predictionTimeHip</name>
 					<type>float</type>
-					<init>0.30</init>
+					<init>0.2</init>
 					<min value="-1.0"/>
 					<max value="1.0"/>
 					<description>amount of time (seconds) into the future that the character tries to move hip to (kind of).  Will be controlled by balancer in future but can help recover spine quicker from bending forwards to much.</description>
@@ -404,14 +404,14 @@
 				<Item type="rage__NMParam">
 					<name>extraSteps</name>
 					<type>int</type>
-					<init>-1</init>
+					<init>0</init>
 					<min value="-1"/>
 					<description>Allow the balancer to take this many more steps before hitting maxSteps. If negative nothing happens(safe default)</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>extraTime</name>
 					<type>float</type>
-					<init>-1.00</init>
+					<init>0.00</init>
 					<min value="-1.00"/>
 					<description>Allow the balancer to balance for this many more seconds before hitting maxBalanceTime.  If negative nothing happens(safe default)</description>
 				</Item>
@@ -425,7 +425,7 @@
 				<Item type="rage__NMParam">
 					<name>fallMult</name>
 					<type>float</type>
-					<init>1.0</init>
+					<init>0.0</init>
 					<min value="0.0"/>
 					<max value="100.0"/>
 					<description>Multiply the rampDown of stiffness on falling by this amount ( GT 1 fall quicker)</description>
@@ -473,7 +473,7 @@
 				<Item type="rage__NMParam">
 					<name>changeStepTime</name>
 					<type>float</type>
-					<init>-1.00</init>
+					<init>0.00</init>
 					<min value="-1.0"/>
 					<max value="5.0"/>
 					<description>time not in contact (airborne) before step is changed. If -ve don't change step</description>
@@ -533,7 +533,7 @@
 				<Item type="rage__NMParam">
 					<name>avoidFootWidth</name>
 					<type>float</type>
-					<init>0.10</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="1.0"/>
 					<description>NB. Very sensitive. Avoid tries to not step across a line of the inside of the stance leg's foot. avoidFootWidth = how much inwards from the ankle this line is in (m).</description>
@@ -541,7 +541,7 @@
 				<Item type="rage__NMParam">
 					<name>avoidFeedback</name>
 					<type>float</type>
-					<init>0.60</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="2.0"/>
 					<description>NB. Very sensitive. Avoid tries to not step across a line of the inside of the stance leg's foot. Avoid doesn't allow the desired stepping foot to cross the line.  avoidFeedback = how much of the actual crossing of that line is fedback as an error.</description>
@@ -565,7 +565,7 @@
 				<Item type="rage__NMParam">
 					<name>stepIfInSupport</name>
 					<type>bool</type>
-					<init>true</init>
+					<init>false</init>
 					<description>The balancer sometimes decides to step even if balanced</description>
 				</Item>
 				<Item type="rage__NMParam">
@@ -583,7 +583,7 @@
 				<Item type="rage__NMParam">
 					<name>depthFudge</name>
 					<type>float</type>
-					<init>0.010</init>
+					<init>0.000</init>
 					<min value="0.00"/>
 					<max value="1.0"/>
 					<description>Supposed to increase foot friction: Impact depth of a collision with the foot is changed when the balancer is running - impact.SetDepth(impact.GetDepth() - depthFudge)</description>
@@ -591,7 +591,7 @@
 				<Item type="rage__NMParam">
 					<name>depthFudgeStagger</name>
 					<type>float</type>
-					<init>0.010</init>
+					<init>0.000</init>
 					<min value="0.00"/>
 					<max value="1.0"/>
 					<description>Supposed to increase foot friction: Impact depth of a collision with the foot is changed when staggerFall is running - impact.SetDepth(impact.GetDepth() - depthFudgeStagger)</description>
@@ -599,7 +599,7 @@
 				<Item type="rage__NMParam">
 					<name>footFriction</name>
 					<type>float</type>
-					<init>1.0</init>
+					<init>0.0</init>
 					<min value="0.00"/>
 					<max value="40.0"/>
 					<description>Foot friction multiplier is multiplied by this amount if balancer is running</description>
@@ -607,7 +607,7 @@
 				<Item type="rage__NMParam">
 					<name>footFrictionStagger</name>
 					<type>float</type>
-					<init>1.0</init>
+					<init>0.0</init>
 					<min value="0.00"/>
 					<max value="40.0"/>
 					<description>Foot friction multiplier is multiplied by this amount if staggerFall is running</description>
@@ -615,7 +615,7 @@
 				<Item type="rage__NMParam">
 					<name>backwardsLeanCutoff</name>
 					<type>float</type>
-					<init>1.10</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="2.00"/>
 					<description>Backwards lean threshold to cut off stay upright forces. 0.0 Vertical - 1.0 horizontal.  0.6 is a sensible value.  NB: the balancer does not fail in order to give stagger that extra step as it falls.  A backwards lean of GT 0.6 will generally mean the balancer will soon fail without stayUpright forces.</description>
@@ -639,7 +639,7 @@
 				<Item type="rage__NMParam">
 					<name>giveUpRampDuration</name>
 					<type>float</type>
-					<init>-1.00</init>
+					<init>0.00</init>
 					<min value="-1.00"/>
 					<max value="10.0"/>
 					<description>duration of ramp from start of behaviour for above two parameters. If smaller than 0, no ramp is applied</description>
@@ -647,7 +647,7 @@
 				<Item type="rage__NMParam">
 					<name>leanToAbort</name>
 					<type>float</type>
-					<init>0.60</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>lean at which to send abort message when maxSteps or maxBalanceTime is reached</description>
@@ -735,7 +735,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseSpreadOverParts</name>
 					<type>bool</type>
-					<init>false</init>
+					<init>true</init>
 					<description>spreads impulse across parts. currently only for spine parts, not limbs.</description>
 				</Item>
 				<Item type="rage__NMParam">
@@ -915,7 +915,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseNoBalMult</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>amount to scale impulse by if the dynamicBalance is not OK.  1.0 means this functionality is not applied.</description>
@@ -923,7 +923,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseBalStabStart</name>
 					<type>float</type>
-					<init>3.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="100.00"/>
 					<description>100% LE Start to impulseBalStabMult*100% GT End. NB: Start LT End</description>
@@ -931,7 +931,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseBalStabEnd</name>
 					<type>float</type>
-					<init>10.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="100.00"/>
 					<description>100% LE Start to impulseBalStabMult*100% GT End. NB: Start LT End</description>
@@ -939,7 +939,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseBalStabMult</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>100% LE Start to impulseBalStabMult*100% GT End. NB: leaving this as 1.0 means this functionality is not applied and Start and End have no effect.</description>
@@ -947,7 +947,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseSpineAngStart</name>
 					<type>float</type>
-					<init>0.70</init>
+					<init>0.00</init>
 					<min value="-1.00"/>
 					<max value="1.00"/>
 					<description>100% GE Start to impulseSpineAngMult*100% LT End. NB: Start GT End.  This the dot of hip2Head with up.</description>
@@ -955,7 +955,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseSpineAngEnd</name>
 					<type>float</type>
-					<init>0.20</init>
+					<init>0.00</init>
 					<min value="-1.00"/>
 					<max value="1.00"/>
 					<description>100% GE Start to impulseSpineAngMult*100% LT End. NB: Start GT End.  This the dot of hip2Head with up.</description>
@@ -963,7 +963,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseSpineAngMult</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>100% GE Start to impulseSpineAngMult*100% LT End. NB: leaving this as 1.0 means this functionality is not applied and Start and End have no effect.</description>
@@ -971,7 +971,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseVelStart</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="100.00"/>
 					<description>100% LE Start to impulseVelMult*100% GT End. NB: Start LT End</description>
@@ -979,7 +979,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseVelEnd</name>
 					<type>float</type>
-					<init>4.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="100.00"/>
 					<description>100% LE Start to impulseVelMult*100% GT End. NB: Start LT End</description>
@@ -987,7 +987,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseVelMult</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>100% LE Start to impulseVelMult*100% GT End. NB: leaving this as 1.0 means this functionality is not applied and Start and End have no effect.</description>
@@ -1030,7 +1030,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseOneLegMult</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>amount to scale impulse by if the character is contacting with one foot only and dynamicBalance is OK and impulse is above impulseAirMultStart</description>
@@ -1038,21 +1038,21 @@
 				<Item type="rage__NMParam">
 					<name>impulseOneLegMultStart</name>
 					<type>float</type>
-					<init>100.0</init>
+					<init>0.0</init>
 					<min value="0.00"/>
 					<description>if impulse is above this value scale it by impulseOneLegMult</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>impulseOneLegMax</name>
 					<type>float</type>
-					<init>100.0</init>
+					<init>0.0</init>
 					<min value="0.00"/>
 					<description>amount to clamp impulse to if character is contacting with one foot only  and dynamicBalance is OK</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>impulseOneLegApplyAbove</name>
 					<type>float</type>
-					<init>399.0</init>
+					<init>0.0</init>
 					<min value="0.00"/>
 					<description>if impulse is above this amount then do not scale/clamp just let it through as is - it's a shotgun or cannon</description>
 				</Item>
@@ -1073,7 +1073,7 @@
 				<Item type="rage__NMParam">
 					<name>rbLowerShare</name>
 					<type>float</type>
-					<init>0.50</init>
+					<init>0.00</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>rigid body response is shared between the upper and lower body (rbUpperShare = 1-rbLowerShare). rbLowerShare=0.5 gives upper and lower share scaled by mass.  i.e. if 70% ub mass and 30% lower mass then rbLowerShare=0.5 gives actualrbShare of 0.7ub and 0.3lb. rbLowerShare GT 0.5 scales the ub share down from 0.7 and the lb up from 0.3.</description>
@@ -1081,7 +1081,7 @@
 				<Item type="rage__NMParam">
 					<name>rbMoment</name>
 					<type>float</type>
-					<init>1.000</init>
+					<init>0.000</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>0.0 only force, 0.5 = force and half the rigid body moment applied, 1.0 = force and full rigidBody moment</description>
@@ -1089,7 +1089,7 @@
 				<Item type="rage__NMParam">
 					<name>rbMaxTwistMomentArm</name>
 					<type>float</type>
-					<init>0.50</init>
+					<init>0.00</init>
 					<min value="0.0"/>
 					<max value="2.0"/>
 					<description>Maximum twist arm moment of bullet applied</description>
@@ -1113,7 +1113,7 @@
 				<Item type="rage__NMParam">
 					<name>rbMomentAirborne</name>
 					<type>float</type>
-					<init>1.000</init>
+					<init>0.000</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>if Airborne: 0.0 only force, 0.5 = force and half the rigid body moment applied, 1.0 = force and full rigidBody moment</description>
@@ -1121,7 +1121,7 @@
 				<Item type="rage__NMParam">
 					<name>rbMaxTwistMomentArmAirborne</name>
 					<type>float</type>
-					<init>0.50</init>
+					<init>0.00</init>
 					<min value="0.0"/>
 					<max value="2.0"/>
 					<description>if Airborne: Maximum twist arm moment of bullet applied</description>
@@ -1129,7 +1129,7 @@
 				<Item type="rage__NMParam">
 					<name>rbMaxBroomMomentArmAirborne</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.0"/>
 					<max value="2.0"/>
 					<description>if Airborne: Maximum broom((everything but the twist) arm moment of bullet applied</description>
@@ -1145,7 +1145,7 @@
 				<Item type="rage__NMParam">
 					<name>rbMomentOneLeg</name>
 					<type>float</type>
-					<init>1.000</init>
+					<init>0.000</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>if only one leg in contact: 0.0 only force, 0.5 = force and half the rigid body moment applied, 1.0 = force and full rigidBody moment</description>
@@ -1153,7 +1153,7 @@
 				<Item type="rage__NMParam">
 					<name>rbMaxTwistMomentArmOneLeg</name>
 					<type>float</type>
-					<init>0.50</init>
+					<init>0.00</init>
 					<min value="0.0"/>
 					<max value="2.0"/>
 					<description>if only one leg in contact: Maximum twist arm moment of bullet applied</description>
@@ -1161,7 +1161,7 @@
 				<Item type="rage__NMParam">
 					<name>rbMaxBroomMomentArmOneLeg</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.0"/>
 					<max value="2.0"/>
 					<description>if only one leg in contact: Maximum broom((everything but the twist) arm moment of bullet applied</description>
@@ -1189,7 +1189,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseSpreadOverParts</name>
 					<type>bool</type>
-					<init>false</init>
+					<init>true</init>
 					<description>spreads impulse across parts. currently only for spine parts, not limbs.</description>
 				</Item>
 				<Item type="rage__NMParam">
@@ -1211,7 +1211,7 @@
 				<Item type="rage__NMParam">
 					<name>loosenessFix</name>
 					<type>bool</type>
-					<init>false</init>
+					<init>true</init>
 					<description>Fix the rage looseness bug by applying only the impulse at the centre of the body unless it is a spine part then apply the twist component only of the torque as well.</description>
 				</Item>
 				<Item type="rage__NMParam">
@@ -1287,7 +1287,7 @@
 				<Item type="rage__NMParam">
 					<name>torqueReductionPerTick</name>
 					<type>float</type>
-					<init>0.00</init>
+					<init>1.00</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>ratio of torque for next tick (e.g. 1.0: not reducing over time, 0.9: each tick torque is reduced by 10%)</description>
@@ -1339,7 +1339,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseNoBalMult</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>amount to scale impulse by if the dynamicBalance is not OK.  1.0 means this functionality is not applied.</description>
@@ -1347,7 +1347,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseBalStabStart</name>
 					<type>float</type>
-					<init>3.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="100.00"/>
 					<description>100% LE Start to impulseBalStabMult*100% GT End. NB: Start LT End</description>
@@ -1355,7 +1355,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseBalStabEnd</name>
 					<type>float</type>
-					<init>10.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="100.00"/>
 					<description>100% LE Start to impulseBalStabMult*100% GT End. NB: Start LT End</description>
@@ -1363,7 +1363,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseBalStabMult</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>100% LE Start to impulseBalStabMult*100% GT End. NB: leaving this as 1.0 means this functionality is not applied and Start and End have no effect.</description>
@@ -1371,7 +1371,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseSpineAngStart</name>
 					<type>float</type>
-					<init>0.70</init>
+					<init>0.00</init>
 					<min value="-1.00"/>
 					<max value="1.00"/>
 					<description>100% GE Start to impulseSpineAngMult*100% LT End. NB: Start GT End.  This the dot of hip2Head with up.</description>
@@ -1379,7 +1379,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseSpineAngEnd</name>
 					<type>float</type>
-					<init>0.20</init>
+					<init>0.00</init>
 					<min value="-1.00"/>
 					<max value="1.00"/>
 					<description>100% GE Start to impulseSpineAngMult*100% LT End. NB: Start GT End.  This the dot of hip2Head with up.</description>
@@ -1387,7 +1387,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseSpineAngMult</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>100% GE Start to impulseSpineAngMult*100% LT End. NB: leaving this as 1.0 means this functionality is not applied and Start and End have no effect.</description>
@@ -1395,7 +1395,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseVelStart</name>
 					<type>float</type>
-					<init>4.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="100.00"/>
 					<description>100% LE Start to impulseVelMult*100% GT End. NB: Start LT End</description>
@@ -1403,7 +1403,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseVelEnd</name>
 					<type>float</type>
-					<init>4.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="100.00"/>
 					<description>100% LE Start to impulseVelMult*100% GT End. NB: Start LT End</description>
@@ -1411,7 +1411,7 @@
 				<Item type="rage__NMParam">
 					<name>impulseVelMult</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>100% LE Start to impulseVelMult*100% GT End. NB: leaving this as 1.0 means this functionality is not applied and Start and End have no effect.</description>
@@ -1497,7 +1497,7 @@
 				<Item type="rage__NMParam">
 					<name>rbLowerShare</name>
 					<type>float</type>
-					<init>0.50</init>
+					<init>0.00</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>rigid body response is shared between the upper and lower body (rbUpperShare = 1-rbLowerShare). rbLowerShare=0.5 gives upper and lower share scaled by mass.  i.e. if 70% ub mass and 30% lower mass then rbLowerShare=0.5 gives actualrbShare of 0.7ub and 0.3lb. rbLowerShare GT 0.5 scales the ub share down from 0.7 and the lb up from 0.3.</description>
@@ -1505,7 +1505,7 @@
 				<Item type="rage__NMParam">
 					<name>rbMoment</name>
 					<type>float</type>
-					<init>1.000</init>
+					<init>0.000</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>0.0 only force, 0.5 = force and half the rigid body moment applied, 1.0 = force and full rigidBody moment</description>
@@ -1513,7 +1513,7 @@
 				<Item type="rage__NMParam">
 					<name>rbMaxTwistMomentArm</name>
 					<type>float</type>
-					<init>0.50</init>
+					<init>0.00</init>
 					<min value="0.0"/>
 					<max value="2.0"/>
 					<description>Maximum twist arm moment of bullet applied</description>
@@ -1521,7 +1521,7 @@
 				<Item type="rage__NMParam">
 					<name>rbMaxBroomMomentArm</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.0"/>
 					<max value="2.0"/>
 					<description>Maximum broom((everything but the twist) arm moment of bullet applied</description>
@@ -1537,7 +1537,7 @@
 				<Item type="rage__NMParam">
 					<name>rbMomentAirborne</name>
 					<type>float</type>
-					<init>1.000</init>
+					<init>0.000</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>if Airborne: 0.0 only force, 0.5 = force and half the rigid body moment applied, 1.0 = force and full rigidBody moment</description>
@@ -1545,7 +1545,7 @@
 				<Item type="rage__NMParam">
 					<name>rbMaxTwistMomentArmAirborne</name>
 					<type>float</type>
-					<init>0.50</init>
+					<init>0.00</init>
 					<min value="0.0"/>
 					<max value="2.0"/>
 					<description>if Airborne: Maximum twist arm moment of bullet applied</description>
@@ -1553,7 +1553,7 @@
 				<Item type="rage__NMParam">
 					<name>rbMaxBroomMomentArmAirborne</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.0"/>
 					<max value="2.0"/>
 					<description>if Airborne: Maximum broom((everything but the twist) arm moment of bullet applied</description>
@@ -1569,7 +1569,7 @@
 				<Item type="rage__NMParam">
 					<name>rbMomentOneLeg</name>
 					<type>float</type>
-					<init>1.000</init>
+					<init>0.000</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>if only one leg in contact: 0.0 only force, 0.5 = force and half the rigid body moment applied, 1.0 = force and full rigidBody moment</description>
@@ -1577,7 +1577,7 @@
 				<Item type="rage__NMParam">
 					<name>rbMaxTwistMomentArmOneLeg</name>
 					<type>float</type>
-					<init>0.50</init>
+					<init>0.00</init>
 					<min value="0.0"/>
 					<max value="2.0"/>
 					<description>if only one leg in contact: Maximum twist arm moment of bullet applied</description>
@@ -1585,7 +1585,7 @@
 				<Item type="rage__NMParam">
 					<name>rbMaxBroomMomentArmOneLeg</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.0"/>
 					<max value="2.0"/>
 					<description>if only one leg in contact: Maximum broom((everything but the twist) arm moment of bullet applied</description>
@@ -1650,7 +1650,7 @@
 				<Item type="rage__NMParam">
 					<name>lean1</name>
 					<type>float</type>
-					<init>1.570796</init>
+					<init>0.0</init>
 					<min value="0.0"/>
 					<max value="3.141593"/>
 					<description>Custom limit values to use if not setting limits to desired. Limits are RAGE-native, not NM-wrapper-native.</description>
@@ -1658,7 +1658,7 @@
 				<Item type="rage__NMParam">
 					<name>lean2</name>
 					<type>float</type>
-					<init>1.570796</init>
+					<init>0.0</init>
 					<min value="0.0"/>
 					<max value="3.141593"/>
 					<description></description>
@@ -1666,7 +1666,7 @@
 				<Item type="rage__NMParam">
 					<name>twist</name>
 					<type>float</type>
-					<init>1.570796</init>
+					<init>0.0</init>
 					<min value="0.0"/>
 					<max value="3.141593"/>
 					<description></description>
@@ -1674,7 +1674,7 @@
 				<Item type="rage__NMParam">
 					<name>margin</name>
 					<type>float</type>
-					<init>0.196350</init>
+					<init>0.0</init>
 					<min value="0.0"/>
 					<max value="3.141593"/>
 					<description>Joint limit margin to add to current animation limits when using those to set runtime limits.</description>
@@ -1696,7 +1696,7 @@
 				<Item type="rage__NMParam">
 					<name>stiffness</name>
 					<type>float</type>
-					<init>15.00</init>
+					<init>10.00</init>
 					<min value="0.00"/>
 					<max value="30.00"/>
 					<description>Stiffness of the soft limit. Parameter is used to calculate spring term that contributes to the desired acceleration.</description>
@@ -1704,15 +1704,15 @@
 				<Item type="rage__NMParam">
 					<name>damping</name>
 					<type>float</type>
-					<init>1.00</init>
-					<min value="0.90"/>
+					<init>0.20</init>
+					<min value="0.20"/>
 					<max value="1.10"/>
 					<description>Damping of the soft limit. Parameter is used to calculate damper term that contributes to the desired acceleration. To have the system critically dampened set it to 1.0.</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>limitAngle</name>
 					<type>float</type>
-					<init>0.40</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="6.283185"/>
 					<description>Soft limit angle. Positive angle in RAD, measured relatively either from hard limit maxAngle (approach direction = -1) or minAngle (approach direction = 1). This angle will be clamped if outside the joint hard limit range.</description>
@@ -1740,7 +1740,7 @@
 				<Item type="rage__NMParam">
 					<name>injuredArmTime</name>
 					<type>float</type>
-					<init>0.250</init>
+					<init>1.950</init>
 					<min value="0.00"/>
 					<max value="2.00"/>
 					<description>length of the reaction</description>
@@ -1748,7 +1748,7 @@
 				<Item type="rage__NMParam">
 					<name>hipYaw</name>
 					<type>float</type>
-					<init>0.80</init>
+					<init>1.50</init>
 					<min value="-2.00"/>
 					<max value="2.00"/>
 					<description>Amount of hip twist.  (Negative values twist into bullet direction - probably not what is wanted)</description>
@@ -1988,7 +1988,7 @@
 				<Item type="rage__NMParam">
 					<name>leanAmountMin</name>
 					<type>float</type>
-					<init>0.200</init>
+					<init>0.000</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>minimum amount of lean</description>
@@ -1996,7 +1996,7 @@
 				<Item type="rage__NMParam">
 					<name>leanAmountMax</name>
 					<type>float</type>
-					<init>0.200</init>
+					<init>0.000</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>maximum amount of lean</description>
@@ -2004,7 +2004,7 @@
 				<Item type="rage__NMParam">
 					<name>changeTimeMin</name>
 					<type>float</type>
-					<init>0.50</init>
+					<init>0.00</init>
 					<min value="0.0"/>
 					<max value="20.0"/>
 					<description>min time until changing direction</description>
@@ -2012,7 +2012,7 @@
 				<Item type="rage__NMParam">
 					<name>changeTimeMax</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.0"/>
 					<max value="20.0"/>
 					<description>maximum time until changing direction</description>
@@ -2082,7 +2082,7 @@
 				<Item type="rage__NMParam">
 					<name>leanAmount</name>
 					<type>float</type>
-					<init>0.200</init>
+					<init>0.000</init>
 					<min value="-1.0"/>
 					<max value="1.0"/>
 					<description>amount of lean, 0 to about 0.5. -ve will move away from the target.</description>
@@ -2141,7 +2141,7 @@
 				<Item type="rage__NMParam">
 					<name>leanAmount</name>
 					<type>float</type>
-					<init>0.200</init>
+					<init>0.000</init>
 					<min value="-0.50"/>
 					<max value="0.50"/>
 					<description>amount of lean, 0 to about 0.5. -ve will move away from the target.</description>
@@ -2161,7 +2161,7 @@
 				<Item type="rage__NMParam">
 					<name>leanAmount</name>
 					<type>float</type>
-					<init>0.200</init>
+					<init>0.000</init>
 					<min value="-0.50"/>
 					<max value="0.50"/>
 					<description>amount of lean, 0 to about 0.5. -ve will move away from the target.</description>
@@ -2197,7 +2197,7 @@
 				<Item type="rage__NMParam">
 					<name>leanAmount</name>
 					<type>float</type>
-					<init>0.200</init>
+					<init>0.000</init>
 					<min value="-1.0"/>
 					<max value="1.0"/>
 					<description>amount of lean, 0 to about 0.5. -ve will move away from the target.</description>
@@ -2738,7 +2738,7 @@
 				<Item type="rage__NMParam">
 					<name>torqueStrength</name>
 					<type>float</type>
-					<init>0.00</init>
+					<init>5.00</init>
 					<min value="0.00"/>
 					<max value="16.0"/>
 					<description>strength of torque based constraint</description>
@@ -2794,7 +2794,7 @@
 				<Item type="rage__NMParam">
 					<name>stayUpAcc</name>
 					<type>float</type>
-					<init>0.70</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="2.00"/>
 					<description>How much the cheat force takes into account the acceleration of moving platforms</description>
@@ -2802,7 +2802,7 @@
 				<Item type="rage__NMParam">
 					<name>stayUpAccMax</name>
 					<type>float</type>
-					<init>5.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="15.0"/>
 					<description>The maximum floorAcceleration (of a moving platform) that the cheat force takes into account</description>
@@ -2836,7 +2836,7 @@
 				<Item type="rage__NMParam">
 					<name>characterHealth</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>health of character</description>
@@ -2908,7 +2908,7 @@
 				<Item type="rage__NMParam">
 					<name>groundFriction</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.30</init>
 					<min value="0.00"/>
 					<max value="10.00"/>
 					<description>8.0 was used on yanked) Friction multiplier on bodyParts when on ground.  Character can look too slidy with groundFriction = 1.  Higher values give a more jerky reation but this seems timestep dependent especially for dragged by the feet.</description>
@@ -3069,37 +3069,37 @@
 				<Item type="rage__NMParam">
 					<name>applyToSpine</name>
 					<type>bool</type>
-					<init>true</init>
+					<init>false</init>
 					<description></description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>applyToThighs</name>
 					<type>bool</type>
-					<init>true</init>
+					<init>false</init>
 					<description></description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>applyToClavicles</name>
 					<type>bool</type>
-					<init>true</init>
+					<init>false</init>
 					<description></description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>applyToUpperArms</name>
 					<type>bool</type>
-					<init>true</init>
+					<init>false</init>
 					<description></description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>footSlip</name>
 					<type>bool</type>
-					<init>true</init>
+					<init>false</init>
 					<description>allow foot slipping if collided</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>vehicleClass</name>
 					<type>int</type>
-					<init>15</init>
+					<init>0</init>
 					<min value="0"/>
 					<max value="100"/>
 					<description>ClassType of the object against which to enhance the collision.  All character vehicle interaction (e.g. braceForImpact glancing spins) relies on this value so EDIT WISELY. If it is used for things other than vehicles then NM should be informed.</description>
@@ -3113,7 +3113,7 @@
 				<Item type="rage__NMParam">
 					<name>somersaultThresh</name>
 					<type>float</type>
-					<init>34.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="200.00"/>
 					<description>Somersault AngularMomentum measure above which we start damping - try 34.0.  Falling over straight backwards gives 54 on hitting ground.</description>
@@ -3129,7 +3129,7 @@
 				<Item type="rage__NMParam">
 					<name>cartwheelThresh</name>
 					<type>float</type>
-					<init>27.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="200.00"/>
 					<description>Cartwheel AngularMomentum measure above which we start damping - try 27.0</description>
@@ -3201,7 +3201,7 @@
 				<Item type="rage__NMParam">
 					<name>muscleStiffness</name>
 					<type>float</type>
-					<init>-1.0</init>
+					<init>9.0</init>
 					<min value="-1.10"/>
 					<max value="10.00"/>
 					<description>muscleStiffness of masked joints. -values mean don't apply (just use defaults or ones applied by behaviours - safer if you are going to return to a behaviour)</description>
@@ -3209,7 +3209,7 @@
 				<Item type="rage__NMParam">
 					<name>stiffness</name>
 					<type>float</type>
-					<init>-1.0</init>
+					<init>9.0</init>
 					<min value="-1.10"/>
 					<max value="16.00"/>
 					<description>stiffness of masked joints. -ve values mean don't apply stiffness or damping (just use defaults or ones applied by behaviours).  If you are using animpose fullbody on its own then this gives the opprtunity to use setStffness and setMuscleStiffness messages to set up the character's muscles. mmmmtodo get rid of this -ve</description>
@@ -3217,7 +3217,7 @@
 				<Item type="rage__NMParam">
 					<name>damping</name>
 					<type>float</type>
-					<init>1.0</init>
+					<init>9.0</init>
 					<min value="0.00"/>
 					<max value="2.00"/>
 					<description>damping of masked joints</description>
@@ -3231,31 +3231,31 @@
 				<Item type="rage__NMParam">
 					<name>overideHeadlook</name>
 					<type>bool</type>
-					<init>false</init>
+					<init>true</init>
 					<description>overide Headlook behaviour (if animPose includes the head)</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>overidePointArm</name>
 					<type>bool</type>
-					<init>false</init>
+					<init>true</init>
 					<description>overide PointArm behaviour (if animPose includes the arm/arms)</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>overidePointGun</name>
 					<type>bool</type>
-					<init>false</init>
+					<init>true</init>
 					<description>overide PointGun behaviour (if animPose includes the arm/arms)//mmmmtodo not used at moment</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>useZMPGravityCompensation</name>
 					<type>bool</type>
-					<init>true</init>
+					<init>false</init>
 					<description>If true then modify gravity compensation based on stance (can reduce gravity compensation to zero if cofm is outside of balance area)</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>gravityCompensation</name>
 					<type>float</type>
-					<init>-1.0</init>
+					<init>0.0</init>
 					<min value="-1.0"/>
 					<max value="14.00"/>
 					<description>gravity compensation applied to joints in the effectorMask. If -ve then not applied (use current setting)</description>
@@ -3476,7 +3476,7 @@
 				<Item type="rage__NMParam">
 					<name>leftPartID</name>
 					<type>int</type>
-					<init>10</init>
+					<init>3</init>
 					<min value="0"/>
 					<max value="21"/>
 					<description>ID of part that the circle uses as local space for positioning</description>
@@ -3520,7 +3520,7 @@
 				<Item type="rage__NMParam">
 					<name>rightPartID</name>
 					<type>int</type>
-					<init>10</init>
+					<init>3</init>
 					<min value="0"/>
 					<max value="21"/>
 					<description>ID of part that the circle uses as local space for positioning</description>
@@ -3698,7 +3698,7 @@
 				<Item type="rage__NMParam">
 					<name>angSpeed</name>
 					<type>float</type>
-					<init>6.280</init>
+					<init>1.000</init>
 					<min value="0.10"/>
 					<max value="10.0"/>
 					<description>Controls the speed of the windmilling</description>
@@ -3770,7 +3770,7 @@
 				<Item type="rage__NMParam">
 					<name>elbowRate</name>
 					<type>float</type>
-					<init>1.0</init>
+					<init>100</init>
 					<min value="0.0"/>
 					<max value="6.0"/>
 					<description>rate at which elbow tries to match *ElbowAngle</description>
@@ -3945,14 +3945,14 @@
 				<Item type="rage__NMParam">
 					<name>ignoreColWithIndex</name>
 					<type>int</type>
-					<init>-2</init>
-					<min value="-2"/>
+					<init>4</init>
+					<min value="0"/>
 					<description>used so impact with the character that is pushing you over doesn't set off the behaviour</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>slumpMode</name>
 					<type>int</type>
-					<init>1</init>
+					<init>0</init>
 					<min value="0"/>
 					<max value="2"/>
 					<description>0=Normal slump(less movement then slump and movement LT small), 1=fast slump, 2=less movement then slump</description>
@@ -3976,7 +3976,7 @@
 				<Item type="rage__NMParam">
 					<name>forwardMode</name>
 					<type>int</type>
-					<init>0</init>
+					<init>1</init>
 					<min value="0"/>
 					<max value="1"/>
 					<description>0=slump, 1=fallToKnees if shot is running, otherwise slump</description>
@@ -3984,7 +3984,7 @@
 				<Item type="rage__NMParam">
 					<name>timeToForward</name>
 					<type>float</type>
-					<init>0.50</init>
+					<init>0.00</init>
 					<min value="0.10"/>
 					<max value="2.00"/>
 					<description>time after a forwards impact before forwardMode is called (leave sometime for a rebound or brace - the min of 0.1 is to ensure fallOverWall can start although it probably needs only 1or2 frames for the probes to return)</description>
@@ -4000,13 +4000,13 @@
 				<Item type="rage__NMParam">
 					<name>braceWall</name>
 					<type>bool</type>
-					<init>true</init>
+					<init>false</init>
 					<description>Brace against wall if forwards impact(at the moment only if bodyBalance is running/in charge of arms)</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>ignoreColVolumeBelow</name>
 					<type>float</type>
-					<init>0.1</init>
+					<init>0.0</init>
 					<min value="-1.0"/>
 					<max value="1000.0"/>
 					<description>collisions with non-fixed objects with volume below this will not set this behaviour off</description>
@@ -4032,7 +4032,7 @@
 				<Item type="rage__NMParam">
 					<name>snapMag</name>
 					<type>float</type>
-					<init>-0.60</init>
+					<init>0.60</init>
 					<min value="-10.00"/>
 					<max value="10.0"/>
 					<description>The magnitude of the snap reaction</description>
@@ -4178,7 +4178,7 @@
 				<Item type="rage__NMParam">
 					<name>elbow</name>
 					<type>float</type>
-					<init>0.9</init>
+					<init>1.75</init>
 					<min value="0.0"/>
 					<max value="4.0"/>
 					<description>How much the elbow swings based on the leg movement</description>
@@ -4475,7 +4475,7 @@
 				<Item type="rage__NMParam">
 					<name>braceDistance</name>
 					<type>float</type>
-					<init>-1.00</init>
+					<init>0.00</init>
 					<min value="-1.00"/>
 					<max value="1.00"/>
 					<description>if -ve then do not brace.  distance from object at which to raise hands to brace 0.5 good if newBrace=true - otherwise 0.65</description>
@@ -4724,7 +4724,7 @@
 				<Item type="rage__NMParam">
 					<name>armStiffness</name>
 					<type>float</type>
-					<init>13.000</init>
+					<init>12.000</init>
 					<min value="6.0"/>
 					<max value="16.0"/>
 					<description></description>
@@ -4732,7 +4732,7 @@
 				<Item type="rage__NMParam">
 					<name>backStiffness</name>
 					<type>float</type>
-					<init>13.000</init>
+					<init>11.000</init>
 					<min value="6.0"/>
 					<max value="16.0"/>
 					<description></description>
@@ -4740,7 +4740,7 @@
 				<Item type="rage__NMParam">
 					<name>legStiffness</name>
 					<type>float</type>
-					<init>13.000</init>
+					<init>12.000</init>
 					<min value="6.0"/>
 					<max value="16.0"/>
 					<description>The stiffness of the character will determine how 'determined' a writhe this is - high values will make him thrash about wildly</description>
@@ -4748,7 +4748,7 @@
 				<Item type="rage__NMParam">
 					<name>armDamping</name>
 					<type>float</type>
-					<init>0.500</init>
+					<init>0.000</init>
 					<min value="0.0"/>
 					<max value="3.0"/>
 					<description>damping amount, less is underdamped</description>
@@ -4756,7 +4756,7 @@
 				<Item type="rage__NMParam">
 					<name>backDamping</name>
 					<type>float</type>
-					<init>0.500</init>
+					<init>0.000</init>
 					<min value="0.0"/>
 					<max value="3.0"/>
 					<description>damping amount, less is underdamped</description>
@@ -4764,7 +4764,7 @@
 				<Item type="rage__NMParam">
 					<name>legDamping</name>
 					<type>float</type>
-					<init>0.500</init>
+					<init>0.000</init>
 					<min value="0.0"/>
 					<max value="3.0"/>
 					<description>damping amount, less is underdamped</description>
@@ -4772,7 +4772,7 @@
 				<Item type="rage__NMParam">
 					<name>armPeriod</name>
 					<type>float</type>
-					<init>1.000</init>
+					<init>0.100</init>
 					<min value="0.010"/>
 					<max value="4.0"/>
 					<description>Controls how fast the writhe is executed, smaller values make faster motions</description>
@@ -4780,7 +4780,7 @@
 				<Item type="rage__NMParam">
 					<name>backPeriod</name>
 					<type>float</type>
-					<init>1.000</init>
+					<init>0.200</init>
 					<min value="0.010"/>
 					<max value="4.0"/>
 					<description>Controls how fast the writhe is executed, smaller values make faster motions</description>
@@ -4788,7 +4788,7 @@
 				<Item type="rage__NMParam">
 					<name>legPeriod</name>
 					<type>float</type>
-					<init>1.000</init>
+					<init>0.200</init>
 					<min value="0.010"/>
 					<max value="4.0"/>
 					<description>Controls how fast the writhe is executed, smaller values make faster motions</description>
@@ -4802,7 +4802,7 @@
 				<Item type="rage__NMParam">
 					<name>armAmplitude</name>
 					<type>float</type>
-					<init>1.000</init>
+					<init>0.300</init>
 					<min value="0.0"/>
 					<max value="3.0"/>
 					<description></description>
@@ -4810,7 +4810,7 @@
 				<Item type="rage__NMParam">
 					<name>backAmplitude</name>
 					<type>float</type>
-					<init>1.000</init>
+					<init>0.100</init>
 					<min value="0.0"/>
 					<max value="3.0"/>
 					<description>scales the amount of writhe. 0 = no writhe</description>
@@ -4818,7 +4818,7 @@
 				<Item type="rage__NMParam">
 					<name>legAmplitude</name>
 					<type>float</type>
-					<init>1.000</init>
+					<init>0.060</init>
 					<min value="0.0"/>
 					<max value="3.0"/>
 					<description>scales the amount of writhe. 0 = no writhe</description>
@@ -4826,7 +4826,7 @@
 				<Item type="rage__NMParam">
 					<name>elbowAmplitude</name>
 					<type>float</type>
-					<init>1.000</init>
+					<init>0.300</init>
 					<min value="0.0"/>
 					<max value="3.0"/>
 					<description></description>
@@ -4834,7 +4834,7 @@
 				<Item type="rage__NMParam">
 					<name>kneeAmplitude</name>
 					<type>float</type>
-					<init>1.000</init>
+					<init>0.020</init>
 					<min value="0.0"/>
 					<max value="3.0"/>
 					<description></description>
@@ -4842,13 +4842,13 @@
 				<Item type="rage__NMParam">
 					<name>rollOverFlag</name>
 					<type>bool</type>
-					<init>false</init>
+					<init>true</init>
 					<description>Flag to set trying to rollOver</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>blendArms</name>
 					<type>float</type>
-					<init>1.0</init>
+					<init>0.0</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>Blend the writhe arms with the current desired arms (0=don't apply any writhe, 1=only writhe)</description>
@@ -4856,7 +4856,7 @@
 				<Item type="rage__NMParam">
 					<name>blendBack</name>
 					<type>float</type>
-					<init>1.0</init>
+					<init>0.2</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>Blend the writhe spine and neck with the current desired (0=don't apply any writhe, 1=only writhe)</description>
@@ -4864,7 +4864,7 @@
 				<Item type="rage__NMParam">
 					<name>blendLegs</name>
 					<type>float</type>
-					<init>1.0</init>
+					<init>0.2</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>Blend the writhe legs with the current desired legs (0=don't apply any writhe, 1=only writhe)</description>
@@ -4884,7 +4884,7 @@
 				<Item type="rage__NMParam">
 					<name>shoulderLean1</name>
 					<type>float</type>
-					<init>0.70</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="6.283185"/>
 					<description>Blend writhe shoulder desired lean1 with this angle in RAD. Note that onFire has to be set to true for this parameter to take any effect.</description>
@@ -4892,7 +4892,7 @@
 				<Item type="rage__NMParam">
 					<name>shoulderLean2</name>
 					<type>float</type>
-					<init>0.40</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="6.283185"/>
 					<description>Blend writhe shoulder desired lean2 with this angle in RAD. Note that onFire has to be set to true for this parameter to take any effect.</description>
@@ -4916,7 +4916,7 @@
 				<Item type="rage__NMParam">
 					<name>rollTorqueScale</name>
 					<type>float</type>
-					<init>150.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="300.00"/>
 					<description>Scale rolling torque that is applied to character spine.</description>
@@ -4924,7 +4924,7 @@
 				<Item type="rage__NMParam">
 					<name>maxRollOverTime</name>
 					<type>float</type>
-					<init>8.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="60.00"/>
 					<description>Rolling torque is ramped down over time. At this time in seconds torque value converges to zero. Use this parameter to restrict time the character is rolling. Note that onFire has to be set to true for this parameter to take any effect.</description>
@@ -4932,7 +4932,7 @@
 				<Item type="rage__NMParam">
 					<name>rollOverRadius</name>
 					<type>float</type>
-					<init>2.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="10.00"/>
 					<description>Rolling torque is ramped down with distance measured from position where character hit the ground and started rolling. At this distance in meters torque value converges to zero. Use this parameter to restrict distance the character travels due to rolling. Note that onFire has to be set to true for this parameter to take any effect.</description>
@@ -4946,7 +4946,7 @@
 				<Item type="rage__NMParam">
 					<name>braceDistance</name>
 					<type>float</type>
-					<init>0.50</init>
+					<init>0.65</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>distance from object at which to raise hands to brace 0.5 good if newBrace=true - otherwise 0.65</description>
@@ -5059,7 +5059,7 @@
 				<Item type="rage__NMParam">
 					<name>minBraceTime</name>
 					<type>float</type>
-					<init>0.30</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="3.00"/>
 					<description>minimum bracing time so the character doesn't look twitchy</description>
@@ -5067,7 +5067,7 @@
 				<Item type="rage__NMParam">
 					<name>handsDelayMin</name>
 					<type>float</type>
-					<init>0.10</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="3.00"/>
 					<description>If bracing with 2 hands delay one hand by at least this amount of time to introduce some asymmetry.</description>
@@ -5075,7 +5075,7 @@
 				<Item type="rage__NMParam">
 					<name>handsDelayMax</name>
 					<type>float</type>
-					<init>0.30</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="3.00"/>
 					<description>If bracing with 2 hands delay one hand by at most this amount of time to introduce some asymmetry.</description>
@@ -5089,7 +5089,7 @@
 				<Item type="rage__NMParam">
 					<name>moveAwayAmount</name>
 					<type>float</type>
-					<init>0.10</init>
+					<init>0.00</init>
 					<min value="-1.00"/>
 					<max value="1.00"/>
 					<description>forceLean away amount (-ve is lean towards)</description>
@@ -5097,7 +5097,7 @@
 				<Item type="rage__NMParam">
 					<name>moveAwayLean</name>
 					<type>float</type>
-					<init>0.050</init>
+					<init>0.000</init>
 					<min value="-0.5"/>
 					<max value="0.5"/>
 					<description>Lean away amount (-ve is lean towards)</description>
@@ -5105,7 +5105,7 @@
 				<Item type="rage__NMParam">
 					<name>moveSideways</name>
 					<type>float</type>
-					<init>0.30</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="10.00"/>
 					<description>Amount of sideways movement if at the front or back of the car to add to the move away from car</description>
@@ -5119,7 +5119,7 @@
 				<Item type="rage__NMParam">
 					<name>newBrace</name>
 					<type>bool</type>
-					<init>true</init>
+					<init>false</init>
 					<description>Use the new brace prediction code</description>
 				</Item>
 				<Item type="rage__NMParam">
@@ -5137,7 +5137,7 @@
 				<Item type="rage__NMParam">
 					<name>rollType</name>
 					<type>int</type>
-					<init>3</init>
+					<init>0</init>
 					<min value="0"/>
 					<max value="3"/>
 					<description>0 = original/roll off/stay on car:  Roll with character velocity, 1 = //Gentle: roll off/stay on car = use relative velocity of character to car to roll against, 2 = //roll over car:  Roll against character velocity.  i.e. roll against any velocity picked up by hitting car, 3 = //Gentle: roll over car:  use relative velocity of character to car to roll with</description>
@@ -5151,7 +5151,7 @@
 				<Item type="rage__NMParam">
 					<name>snapImpact</name>
 					<type>float</type>
-					<init>7.00</init>
+					<init>0.00</init>
 					<min value="-20.00"/>
 					<max value="20.00"/>
 					<description>Exaggeration amount of the initial impact (legs).  +ve fold with car impact (as if pushed at hips in the car velocity direction).  -ve fold away from car impact</description>
@@ -5159,7 +5159,7 @@
 				<Item type="rage__NMParam">
 					<name>snapBonnet</name>
 					<type>float</type>
-					<init>-7.00</init>
+					<init>0.00</init>
 					<min value="-20.00"/>
 					<max value="20.00"/>
 					<description>Exaggeration amount of the secondary (torso) impact with bonnet. +ve fold with car impact (as if pushed at hips by the impact normal).  -ve fold away from car impact</description>
@@ -5167,7 +5167,7 @@
 				<Item type="rage__NMParam">
 					<name>snapFloor</name>
 					<type>float</type>
-					<init>7.00</init>
+					<init>0.00</init>
 					<min value="-20.00"/>
 					<max value="20.00"/>
 					<description>Exaggeration amount of the impact with the floor after falling off of car +ve fold with floor impact (as if pushed at hips in the impact normal direction).  -ve fold away from car impact</description>
@@ -5189,7 +5189,7 @@
 				<Item type="rage__NMParam">
 					<name>dampUpVel</name>
 					<type>float</type>
-					<init>10.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="40.00"/>
 					<description>Amount to damp upward velocity by to limit the amount of air above the car the character can get.</description>
@@ -5197,7 +5197,7 @@
 				<Item type="rage__NMParam">
 					<name>dampSpinThresh</name>
 					<type>float</type>
-					<init>4.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="20.00"/>
 					<description>Angular velocity above which we start damping</description>
@@ -5205,7 +5205,7 @@
 				<Item type="rage__NMParam">
 					<name>dampUpVelThresh</name>
 					<type>float</type>
-					<init>2.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="20.00"/>
 					<description>Upward velocity above which we start damping</description>
@@ -5219,7 +5219,7 @@
 				<Item type="rage__NMParam">
 					<name>gsEndMin</name>
 					<type>float</type>
-					<init>-0.10</init>
+					<init>0.00</init>
 					<min value="-10.00"/>
 					<max value="1.00"/>
 					<description>ID for glancing spin. min depth to be considered from either end (front/rear) of a car (-ve is inside the car area)</description>
@@ -5227,7 +5227,7 @@
 				<Item type="rage__NMParam">
 					<name>gsSideMin</name>
 					<type>float</type>
-					<init>-0.20</init>
+					<init>0.00</init>
 					<min value="-10.00"/>
 					<max value="1.00"/>
 					<description>ID for glancing spin. min depth to be considered on the side of a car (-ve is inside the car area)</description>
@@ -5235,7 +5235,7 @@
 				<Item type="rage__NMParam">
 					<name>gsSideMax</name>
 					<type>float</type>
-					<init>0.50</init>
+					<init>0.00</init>
 					<min value="-10.00"/>
 					<max value="1.00"/>
 					<description>ID for glancing spin. max depth to be considered on the side of a car (+ve is outside the car area)</description>
@@ -5243,7 +5243,7 @@
 				<Item type="rage__NMParam">
 					<name>gsUpness</name>
 					<type>float</type>
-					<init>0.90</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="10.00"/>
 					<description>ID for glancing spin. Character has to be more upright than this value for it to be considered on the side of a car. Fully upright = 1, upsideDown = -1.  Max Angle from upright is acos(gsUpness)</description>
@@ -5251,7 +5251,7 @@
 				<Item type="rage__NMParam">
 					<name>gsCarVelMin</name>
 					<type>float</type>
-					<init>3.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="10.00"/>
 					<description>ID for glancing spin. Minimum car velocity.</description>
@@ -5259,13 +5259,13 @@
 				<Item type="rage__NMParam">
 					<name>gsScale1Foot</name>
 					<type>bool</type>
-					<init>true</init>
+					<init>false</init>
 					<description>Apply gsFricScale1 to the foot if colliding with car.  (Otherwise foot friction - with the ground - is determined by gsFricScale2 if it is in gsFricMask2)</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>gsFricScale1</name>
 					<type>float</type>
-					<init>8.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="10.00"/>
 					<description>Glancing spin help. Friction scale applied when to the side of the car.  e.g. make the character spin more by upping the friction against the car</description>
@@ -5407,7 +5407,7 @@
 				<Item type="rage__NMParam">
 					<name>extraSit</name>
 					<type>float</type>
-					<init>1.0</init>
+					<init>0.0</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>Scale extra-sit value 0..1. Setting to 0 helps with arched-back issues.  Set to 1 for a more alive-looking finish.</description>
@@ -5605,7 +5605,7 @@
 				<Item type="rage__NMParam">
 					<name>magOfForce</name>
 					<type>float</type>
-					<init>0.50</init>
+					<init>0.1</init>
 					<min value="0.00"/>
 					<max value="2.00"/>
 					<description>Magnitude of the falloverWall helper force</description>
@@ -5613,7 +5613,7 @@
 				<Item type="rage__NMParam">
 					<name>maxDistanceFromPelToHitPoint</name>
 					<type>float</type>
-					<init>0.250</init>
+					<init>0.25</init>
 					<min value="0.010"/>
 					<max value="1.00"/>
 					<description>The maximum distance away from the pelvis that hit points will be registered.</description>
@@ -5621,7 +5621,7 @@
 				<Item type="rage__NMParam">
 					<name>maxForceDist</name>
 					<type>float</type>
-					<init>0.80</init>
+					<init>0.8</init>
 					<min value="0.010"/>
 					<max value="2.00"/>
 					<description>maximum distance between hitPoint and body part at which forces are applied to part</description>
@@ -5637,7 +5637,7 @@
 				<Item type="rage__NMParam">
 					<name>minLegHeight</name>
 					<type>float</type>
-					<init>0.40</init>
+					<init>0.4</init>
 					<min value="0.10"/>
 					<max value="2.00"/>
 					<description>minimum height of pelvis above feet at which fallOverWall is attempted</description>
@@ -5679,7 +5679,7 @@
 				<Item type="rage__NMParam">
 					<name>forceTimeOut</name>
 					<type>float</type>
-					<init>2.00</init>
+					<init>1.00</init>
 					<description>The force time out.</description>
 				</Item>
 				<Item type="rage__NMParam">
@@ -5719,7 +5719,7 @@
 				<Item type="rage__NMParam">
 					<name>maxAngVel</name>
 					<type>float</type>
-					<init>2.00</init>
+					<init>-1.0</init>
 					<min value="-1.00"/>
 					<max value="30.00"/>
 					<description>if the angular velocity is higher than maxAngVel, the torques and forces are not applied.</description>
@@ -5733,7 +5733,7 @@
 				<Item type="rage__NMParam">
 					<name>maxWallHeight</name>
 					<type>float</type>
-					<init>-1.00</init>
+					<init>-3.00</init>
 					<min value="-1.00"/>
 					<max value="3.00"/>
 					<description>Maximum height (from the lowest foot) to start to apply forces and torques to fall over the wall.</description>
@@ -5801,13 +5801,13 @@
 				<Item type="rage__NMParam">
 					<name>useLeft</name>
 					<type>bool</type>
-					<init>false</init>
+					<init>true</init>
 					<description>Flag to toggle use of left hand</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>useRight</name>
 					<type>bool</type>
-					<init>false</init>
+					<init>true</init>
 					<description>Flag to toggle the use of the Right hand</description>
 				</Item>
 				<Item type="rage__NMParam">
@@ -5827,7 +5827,7 @@
 				<Item type="rage__NMParam">
 					<name>grabStrength</name>
 					<type>float</type>
-					<init>-1.0</init>
+					<init>600.0</init>
 					<min value="-1.0"/>
 					<max value="10000.0"/>
 					<description>strength in hands for grabbing (kg m/s), -1 to ignore/disable</description>
@@ -5835,7 +5835,7 @@
 				<Item type="rage__NMParam">
 					<name>stickyHands</name>
 					<type>float</type>
-					<init>4.0</init>
+					<init>0.0</init>
 					<min value="0.0"/>
 					<max value="10.0"/>
 					<description>strength of cheat force on hands to pull towards target and stick to target ("cleverHandIK" strength)</description>
@@ -5867,7 +5867,7 @@
 				<Item type="rage__NMParam">
 					<name>pullUpStrengthRight</name>
 					<type>float</type>
-					<init>0.0</init>
+					<init>1.0</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>Strength to pull up with the right arm. 0 = no pull up.</description>
@@ -5875,7 +5875,7 @@
 				<Item type="rage__NMParam">
 					<name>pullUpStrengthLeft</name>
 					<type>float</type>
-					<init>0.0</init>
+					<init>1.0</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>Strength to pull up with the left arm. 0 = no pull up.</description>
@@ -5989,7 +5989,7 @@
 				<Item type="rage__NMParam">
 					<name>dontLetGo</name>
 					<type>bool</type>
-					<init>false</init>
+					<init>true</init>
 					<description>Once a constraint is made, keep reaching with whatever hand is allowed - no matter what the angle/distance and whether or not the constraint has broken due to constraintForce  GT  grabStrength.  mmmtodo this is a badly named parameter</description>
 				</Item>
 				<Item type="rage__NMParam">
@@ -6067,7 +6067,7 @@
 				<Item type="rage__NMParam">
 					<name>useHeadLookToTarget</name>
 					<type>bool</type>
-					<init>false</init>
+					<init>true</init>
 					<description>if true, the character will look at targetForHeadLook after a hand grabs until the end of the behavior. (Before grabbing it looks at the grab target)</description>
 				</Item>
 				<Item type="rage__NMParam">
@@ -6188,7 +6188,7 @@
 				<Item type="rage__NMParam">
 					<name>crashOrLandCutOff</name>
 					<type>float</type>
-					<init>0.8680</init>
+					<init>0.520</init>
 					<min value="-1.00"/>
 					<max value="1.00"/>
 					<description>0.52angle is 0.868 dot//A threshold for deciding how far away from upright the character needs to be before bailing out (going into a foetal) instead of trying to land (keeping stretched out).  NB: never does bailout if ignorWorldCollisions true</description>
@@ -6196,7 +6196,7 @@
 				<Item type="rage__NMParam">
 					<name>pdStrength</name>
 					<type>float</type>
-					<init>0.00</init>
+					<init>0.30</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>Strength of the controller to keep the character at angle aimAngleBase from vertical.</description>
@@ -6204,7 +6204,7 @@
 				<Item type="rage__NMParam">
 					<name>pdDamping</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="5.00"/>
 					<description>Damping multiplier of the controller to keep the character at angle aimAngleBase from vertical.  The actual damping is pdDamping*pdStrength*constant*angVel.</description>
@@ -6212,7 +6212,7 @@
 				<Item type="rage__NMParam">
 					<name>armAngSpeed</name>
 					<type>float</type>
-					<init>7.850</init>
+					<init>1.000</init>
 					<min value="0.00"/>
 					<max value="20.0"/>
 					<description>arm circling speed in armWindMillAdaptive</description>
@@ -6228,7 +6228,7 @@
 				<Item type="rage__NMParam">
 					<name>armPhase</name>
 					<type>float</type>
-					<init>3.10</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="6.283185"/>
 					<description>in armWindMillAdaptive 3.1 opposite for stuntman.  1.0 old default.  0.0 in phase.</description>
@@ -6236,13 +6236,13 @@
 				<Item type="rage__NMParam">
 					<name>armBendElbows</name>
 					<type>bool</type>
-					<init>true</init>
+					<init>false</init>
 					<description>in armWindMillAdaptive bend the elbows as a function of armAngle.  For stuntman true otherwise false.</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>legRadius</name>
 					<type>float</type>
-					<init>0.40</init>
+					<init>0.25</init>
 					<min value="0.010"/>
 					<max value="0.50"/>
 					<description>radius of legs on pedal</description>
@@ -6250,7 +6250,7 @@
 				<Item type="rage__NMParam">
 					<name>legAngSpeed</name>
 					<type>float</type>
-					<init>7.850</init>
+					<init>1.800</init>
 					<min value="0.00"/>
 					<max value="15.0"/>
 					<description>in pedal</description>
@@ -6258,7 +6258,7 @@
 				<Item type="rage__NMParam">
 					<name>legAsymmetry</name>
 					<type>float</type>
-					<init>4.00</init>
+					<init>2.00</init>
 					<min value="-10.00"/>
 					<max value="10.00"/>
 					<description>0.0 for stuntman.  Random offset applied per leg to the angular speed to desynchronise the pedaling - set to 0 to disable, otherwise should be set to less than the angularSpeed value.</description>
@@ -6282,7 +6282,7 @@
 				<Item type="rage__NMParam">
 					<name>armsUp</name>
 					<type>float</type>
-					<init>-3.10</init>
+					<init>1.10</init>
 					<min value="-4.00"/>
 					<max value="2.00"/>
 					<description>Where to put the arms when preparing to land. Approx 1 = above head, 0 = head height, -1 = down.   LT -2.0 use catchFall arms,  LT -3.0 use prepare for landing pose if Agent is due to land vertically, feet first.</description>
@@ -6290,7 +6290,7 @@
 				<Item type="rage__NMParam">
 					<name>orientateBodyToFallDirection</name>
 					<type>bool</type>
-					<init>false</init>
+					<init>true</init>
 					<description>toggle to orientate to fall direction.  i.e. orientate so that the character faces the horizontal velocity direction</description>
 				</Item>
 				<Item type="rage__NMParam">
@@ -6352,7 +6352,7 @@
 				<Item type="rage__NMParam">
 					<name>sideD</name>
 					<type>float</type>
-					<init>0.20</init>
+					<init>0.150</init>
 					<min value="-1.00"/>
 					<max value="1.00"/>
 					<description>sideoffset for the feet during prepareForLanding. +ve = right.</description>
@@ -6360,7 +6360,7 @@
 				<Item type="rage__NMParam">
 					<name>fowardOffsetOfLegIK</name>
 					<type>float</type>
-					<init>0.00</init>
+					<init>0.20</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>Forward offset for the feet during prepareForLanding</description>
@@ -6368,7 +6368,7 @@
 				<Item type="rage__NMParam">
 					<name>legL</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.80</init>
 					<min value="0.0"/>
 					<max value="2.00"/>
 					<description>Leg Length for ik (Internal)//unused</description>
@@ -6376,7 +6376,7 @@
 				<Item type="rage__NMParam">
 					<name>catchFallCutOff</name>
 					<type>float</type>
-					<init>0.8780</init>
+					<init>0.500</init>
 					<min value="-1.00"/>
 					<max value="1.00"/>
 					<description>0.5angle is 0.878 dot. Cutoff to go to the catchFall ( internal) //mmmtodo do like crashOrLandCutOff</description>
@@ -6550,6 +6550,290 @@
 					<max value="1.00"/>
 					<description></description>
 				</Item>
+				<Item type="rage__NMParam">
+					<name>useLeft</name>
+					<type>bool</type>
+					<init>true</init>
+					<description>Flag to toggle use of left hand</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>useRight</name>
+					<type>bool</type>
+					<init>true</init>
+					<description>Flag to toggle the use of the Right hand</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>dropWeaponIfNecessary</name>
+					<type>bool</type>
+					<init>false</init>
+					<description>if hasn't grabbed when weapon carrying hand is close to target, grab anyway</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>dropWeaponDistance</name>
+					<type>float</type>
+					<init>0.30</init>
+					<min value="0.00"/>
+					<max value="1.00"/>
+					<description>distance below which a weapon carrying hand will request weapon to be dropped</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>grabStrength</name>
+					<type>float</type>
+					<init>600.0</init>
+					<min value="-1.0"/>
+					<max value="10000.0"/>
+					<description>strength in hands for grabbing (kg m/s), -1 to ignore/disable</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>stickyHands</name>
+					<type>float</type>
+					<init>0.0</init>
+					<min value="0.0"/>
+					<max value="10.0"/>
+					<description>strength of cheat force on hands to pull towards target and stick to target ("cleverHandIK" strength)</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>turnToTarget</name>
+					<type>int</type>
+					<init>1</init>
+					<min value="0"/>
+					<max value="2"/>
+					<description>0=don't turn, 1=turnToTarget, 2=turnAwayFromTarget</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>grabHoldMaxTimer</name>
+					<type>float</type>
+					<init>30.0</init>
+					<min value="0.0"/>
+					<max value="1000.0"/>
+					<description>amount of time, in seconds, before grab automatically bails</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>pullUpTime</name>
+					<type>float</type>
+					<init>2.0</init>
+					<min value="0.0"/>
+					<max value="4.0"/>
+					<description>Time to reach the full pullup strength</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>pullUpStrengthRight</name>
+					<type>float</type>
+					<init>1.0</init>
+					<min value="0.0"/>
+					<max value="1.0"/>
+					<description>Strength to pull up with the right arm. 0 = no pull up.</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>pullUpStrengthLeft</name>
+					<type>float</type>
+					<init>1.0</init>
+					<min value="0.0"/>
+					<max value="1.0"/>
+					<description>Strength to pull up with the left arm. 0 = no pull up.</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>pos1</name>
+					<type>vector3</type>
+					<init>0, 0, 0</init>
+					<description>Grab pos1, right hand if not using line or surface grab.</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>pos2</name>
+					<type>vector3</type>
+					<init>0, 0, 0</init>
+					<description>Grab pos2, left hand if not using line or surface grab.</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>pos3</name>
+					<type>vector3</type>
+					<init>0, 0, 0</init>
+					<description></description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>pos4</name>
+					<type>vector3</type>
+					<init>0, 0, 0</init>
+					<description></description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>normalR</name>
+					<type>vector3</type>
+					<init>0, 0, 0</init>
+					<min value="-1.0"/>
+					<max value="1.0"/>
+					<description>Normal for the right grab point.</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>normalL</name>
+					<type>vector3</type>
+					<init>0, 0, 0</init>
+					<min value="-1.0"/>
+					<max value="1.0"/>
+					<description>Normal for the left grab point.</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>normalR2</name>
+					<type>vector3</type>
+					<init>0, 0, 0</init>
+					<min value="-1.0"/>
+					<max value="1.0"/>
+					<description>Normal for the 2nd right grab point (if pointsX4grab=true).</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>normalL2</name>
+					<type>vector3</type>
+					<init>0, 0, 0</init>
+					<min value="-1.0"/>
+					<max value="1.0"/>
+					<description>Normal for the 3rd left grab point (if pointsX4grab=true).</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>handsCollide</name>
+					<type>bool</type>
+					<init>false</init>
+					<description>Hand collisions on when grabbing (false turns off hand collisions making grab more stable esp. to grab points slightly inside geometry)</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>justBrace</name>
+					<type>bool</type>
+					<init>false</init>
+					<description>Flag to toggle between grabbing and bracing</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>useLineGrab</name>
+					<type>bool</type>
+					<init>false</init>
+					<description>use the line grab, Grab along the line (x-x2)</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>pointsX4grab</name>
+					<type>bool</type>
+					<init>false</init>
+					<description>use 2 point</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>fromEA</name>
+					<type>bool</type>
+					<init>false</init>
+					<description>use 2 point</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>surfaceGrab</name>
+					<type>bool</type>
+					<init>false</init>
+					<description>Toggle surface grab on. Requires pos1,pos2,pos3 and pos4 to be specified.</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>instanceIndex</name>
+					<type>int</type>
+					<init>-1</init>
+					<min value="-1"/>
+					<description>levelIndex of instance to grab (-1 = world coordinates)</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>instancePartIndex</name>
+					<type>int</type>
+					<init>0</init>
+					<min value="0"/>
+					<description>boundIndex of part on instance to grab (0 = just use instance coordinates)</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>dontLetGo</name>
+					<type>bool</type>
+					<init>true</init>
+					<description>Once a constraint is made, keep reaching with whatever hand is allowed - no matter what the angle/distance and whether or not the constraint has broken due to constraintForce  GT  grabStrength.  mmmtodo this is a badly named parameter</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>bodyStiffness</name>
+					<type>float</type>
+					<init>10.0</init>
+					<min value="6.0"/>
+					<max value="16.0"/>
+					<description>stiffness of upper body. Scales the arm grab such that the armStiffness is default when this is at default value</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>reachAngle</name>
+					<type>float</type>
+					<init>2.80</init>
+					<min value="0.0"/>
+					<max value="3.0"/>
+					<description>Angle from front at which the grab activates. If the point is outside this angle from front will not try to grab.</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>oneSideReachAngle</name>
+					<type>float</type>
+					<init>1.4</init>
+					<min value="0.0"/>
+					<max value="3.0"/>
+					<description>Angle at which we will only reach with one hand.</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>grabDistance</name>
+					<type>float</type>
+					<init>1.0</init>
+					<min value="0.0"/>
+					<max value="4.0"/>
+					<description>Relative distance at which the grab starts.</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>move2Radius</name>
+					<type>float</type>
+					<init>0.0</init>
+					<min value="0.0"/>
+					<max value="14.0"/>
+					<description>Relative distance (additional to grabDistance - doesn't try to move inside grabDistance)at which the grab tries to use the balancer to move to the grab point.</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>armStiffness</name>
+					<type>float</type>
+					<init>14.0</init>
+					<min value="6.0"/>
+					<max value="16.0"/>
+					<description>Stiffness of the arm.</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>maxReachDistance</name>
+					<type>float</type>
+					<init>0.7</init>
+					<min value="0.0"/>
+					<max value="4.0"/>
+					<description>distance to reach out towards the grab point.</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>orientationConstraintScale</name>
+					<type>float</type>
+					<init>1.0</init>
+					<min value="0.0"/>
+					<max value="4.0"/>
+					<description>scale torque used to rotate hands to face normals</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>maxWristAngle</name>
+					<type>float</type>
+					<init>3.141593</init>
+					<min value="0.0"/>
+					<max value="3.151593"/>
+					<description>When we are grabbing the max angle the wrist ccan be at before we break the grab.</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>useHeadLookToTarget</name>
+					<type>bool</type>
+					<init>true</init>
+					<description>if true, the character will look at targetForHeadLook after a hand grabs until the end of the behavior. (Before grabbing it looks at the grab target)</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>lookAtGrab</name>
+					<type>bool</type>
+					<init>true</init>
+					<description>if true, the character will look at the grab</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>targetForHeadLook</name>
+					<type>vector3</type>
+					<init>0, 0, 0</init>
+					<description>Only used if useHeadLookToTarget is true, the target in world space to look at.</description>
+				</Item>
 			</params>
 		</Item>
 		<Item type="rage__NMBehavior">
@@ -6559,7 +6843,7 @@
 				<Item type="rage__NMParam">
 					<name>staggerTime</name>
 					<type>float</type>
-					<init>2.50</init>
+					<init>29.50</init>
 					<min value="0.00"/>
 					<max value="30.00"/>
 					<description>Max time for stumbling around before falling to ground.</description>
@@ -6567,7 +6851,7 @@
 				<Item type="rage__NMParam">
 					<name>staggerLeanRate</name>
 					<type>float</type>
-					<init>0.90</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>How quickly the character leans hips when staggering.</description>
@@ -6575,7 +6859,7 @@
 				<Item type="rage__NMParam">
 					<name>stumbleMaxLeanBack</name>
 					<type>float</type>
-					<init>0.40</init>
+					<init>0.25</init>
 					<min value="0.00"/>
 					<max value="1.50"/>
 					<description>max the character leans hips back when staggering</description>
@@ -6583,7 +6867,7 @@
 				<Item type="rage__NMParam">
 					<name>stumbleMaxLeanForward</name>
 					<type>float</type>
-					<init>0.50</init>
+					<init>0.25</init>
 					<min value="0.00"/>
 					<max value="1.50"/>
 					<description>max the character leans hips forwards when staggering</description>
@@ -6591,7 +6875,7 @@
 				<Item type="rage__NMParam">
 					<name>armsWindmillWritheBlend</name>
 					<type>float</type>
-					<init>0.40</init>
+					<init>0.30</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>Blend armsWindmill with the bodyWrithe arms when character is upright.</description>
@@ -6599,7 +6883,7 @@
 				<Item type="rage__NMParam">
 					<name>spineStumbleWritheBlend</name>
 					<type>float</type>
-					<init>0.70</init>
+					<init>0.40</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>Blend spine stumble with the bodyWrithe spine when character is upright.</description>
@@ -6607,7 +6891,7 @@
 				<Item type="rage__NMParam">
 					<name>legsStumbleWritheBlend</name>
 					<type>float</type>
-					<init>0.20</init>
+					<init>0.30</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>Blend legs stumble with the bodyWrithe legs when character is upright.</description>
@@ -6615,7 +6899,7 @@
 				<Item type="rage__NMParam">
 					<name>armsPoseWritheBlend</name>
 					<type>float</type>
-					<init>0.70</init>
+					<init>0.60</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>Blend the bodyWrithe arms with the current desired pose from on fire behaviour when character is on the floor.</description>
@@ -6623,7 +6907,7 @@
 				<Item type="rage__NMParam">
 					<name>spinePoseWritheBlend</name>
 					<type>float</type>
-					<init>0.550</init>
+					<init>0.450</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>Blend the bodyWrithe back with the current desired pose from on fire behaviour when character is on the floor.</description>
@@ -6631,7 +6915,7 @@
 				<Item type="rage__NMParam">
 					<name>legsPoseWritheBlend</name>
 					<type>float</type>
-					<init>0.50</init>
+					<init>0.30</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>Blend the bodyWrithe legs with the current desired pose from on fire behaviour when character is on the floor.</description>
@@ -6639,13 +6923,13 @@
 				<Item type="rage__NMParam">
 					<name>rollOverFlag</name>
 					<type>bool</type>
-					<init>true</init>
+					<init>false</init>
 					<description>Flag to set bodyWrithe trying to rollOver.</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>rollTorqueScale</name>
 					<type>float</type>
-					<init>25.00</init>
+					<init>1.50</init>
 					<min value="0.00"/>
 					<max value="300.00"/>
 					<description>Scale rolling torque that is applied to character spine by bodyWrithe. Torque magnitude is calculated with the following formula: m_rollOverDirection*rollOverPhase*rollTorqueScale.</description>
@@ -6653,7 +6937,7 @@
 				<Item type="rage__NMParam">
 					<name>predictTime</name>
 					<type>float</type>
-					<init>0.10</init>
+					<init>0.50</init>
 					<min value="0.00"/>
 					<max value="2.00"/>
 					<description>Character pose depends on character facing direction that is evaluated from its COMTM orientation. Set this value to 0 to use no orientation prediction i.e. current character COMTM orientation will be used to determine character facing direction and finally the pose bodyWrithe is blending to. Set this value to  GT  0 to predict character COMTM orientation this amout of time in seconds to the future.</description>
@@ -6661,7 +6945,7 @@
 				<Item type="rage__NMParam">
 					<name>maxRollOverTime</name>
 					<type>float</type>
-					<init>8.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="60.00"/>
 					<description>Rolling torque is ramped down over time. At this time in seconds torque value converges to zero. Use this parameter to restrict time the character is rolling.</description>
@@ -6669,7 +6953,7 @@
 				<Item type="rage__NMParam">
 					<name>rollOverRadius</name>
 					<type>float</type>
-					<init>2.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="10.00"/>
 					<description>Rolling torque is ramped down with distance measured from position where character hit the ground and started rolling. At this distance in meters torque value converges to zero. Use this parameter to restrict distance the character travels due to rolling.</description>
@@ -6725,7 +7009,7 @@
 				<Item type="rage__NMParam">
 					<name>pedalOffset</name>
 					<type>float</type>
-					<init>0.00</init>
+					<init>0.15</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>Move the centre of the pedal for the left leg up by this amount, the right leg down by this amount</description>
@@ -7026,7 +7310,7 @@
 				<Item type="rage__NMParam">
 					<name>armStiffnessDetSupport</name>
 					<type>float</type>
-					<init>8.00</init>
+					<init>0.00</init>
 					<min value="2.00"/>
 					<max value="15.00"/>
 					<description>Stiffness of the arm on pointing arm when a support arm is detached from a two-handed weapon.</description>
@@ -7042,7 +7326,7 @@
 				<Item type="rage__NMParam">
 					<name>gravityOpposition</name>
 					<type>float</type>
-					<init>1.00</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="2.00"/>
 					<description>Amount of gravity opposition on pointing arm.</description>
@@ -7050,7 +7334,7 @@
 				<Item type="rage__NMParam">
 					<name>gravOppDetachedSupport</name>
 					<type>float</type>
-					<init>0.50</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="2.00"/>
 					<description>Amount of gravity opposition on pointing arm when a support arm is detached from a two-handed weapon.</description>
@@ -7072,7 +7356,7 @@
 				<Item type="rage__NMParam">
 					<name>clavicleBlend</name>
 					<type>float</type>
-					<init>0.00</init>
+					<init>0.50</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>How much of blend should come from incoming transforms 0(all IK) .. 1(all ITMs)   For pointing arms only.  (Support arm uses the IK solution as is for clavicles)</description>
@@ -7640,7 +7924,7 @@
 				<Item type="rage__NMParam">
 					<name>asymmetricalLegs</name>
 					<type>float</type>
-					<init>0.0</init>
+					<init>0.7</init>
 					<min value="-1.0"/>
 					<max value="1.0"/>
 					<description>0 is no leg asymmetry in 'foetal' position.  greater than 0 a asymmetricalLegs-rand(30%), added/minus each joint of the legs in radians.  Random number changes about once every roll.  0.4 gives a lot of asymmetry</description>
@@ -7764,7 +8048,7 @@
 				<Item type="rage__NMParam">
 					<name>airborneReduction</name>
 					<type>float</type>
-					<init>0.85</init>
+					<init>0.00</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>Ordinarily keep at 0.85.  Make this lower if you want spinning in the air.</description>
@@ -7772,7 +8056,7 @@
 				<Item type="rage__NMParam">
 					<name>applyMinMaxFriction</name>
 					<type>bool</type>
-					<init>true</init>
+					<init>false</init>
 					<description>Pass-through to Roll Up. Controls whether or not behaviour enforces min/max friction.</description>
 				</Item>
 				<Item type="rage__NMParam">
@@ -7854,7 +8138,7 @@
 				<Item type="rage__NMParam">
 					<name>kMult4Legs</name>
 					<type>float</type>
-					<init>0.30</init>
+					<init>0.00</init>
 					<min value="0.00"/>
 					<max value="1.00"/>
 					<description>how much to add to leg stiffnesses dependent on looseness</description>
@@ -7916,7 +8200,7 @@
 				<Item type="rage__NMParam">
 					<name>spineBlendZero</name>
 					<type>float</type>
-					<init>0.60</init>
+					<init>0.00</init>
 					<min value="-0.10"/>
 					<max value="1.0"/>
 					<description>spine is always blended with zero pose this much and up to 1 as the character become stationary.  If negative no blend is ever applied.</description>
@@ -7924,7 +8208,7 @@
 				<Item type="rage__NMParam">
 					<name>bulletProofVest</name>
 					<type>bool</type>
-					<init>false</init>
+					<init>true</init>
 					<description>looseness applied to spine is different if bulletProofVest is true</description>
 				</Item>
 				<Item type="rage__NMParam">
@@ -7972,7 +8256,7 @@
 				<Item type="rage__NMParam">
 					<name>timeBeforeReachForWound</name>
 					<type>float</type>
-					<init>0.20</init>
+					<init>0.2</init>
 					<min value="0.00"/>
 					<max value="10.00"/>
 					<description>time, in seconds, before the character begins to grab for the wound on the first hit</description>
@@ -8500,7 +8784,7 @@
 				<Item type="rage__NMParam">
 					<name>bracedSideSpinMult</name>
 					<type>float</type>
-					<init>1.0</init>
+					<init>0.0</init>
 					<min value="1.0"/>
 					<max value="5.0"/>
 					<description>If shot on a side with a forward foot and both feet are on the ground and balanced, increase the shockspin to compensate for the balancer naturally resisting spin to that side</description>
@@ -8534,7 +8818,7 @@
 				<Item type="rage__NMParam">
 					<name>ftkHelperForce</name>
 					<type>float</type>
-					<init>200.0</init>
+					<init>0.0</init>
 					<min value="0.00"/>
 					<max value="2000.00"/>
 					<description>Hip helper force magnitude - to help character lean over balance point of line between toes</description>
@@ -8542,13 +8826,13 @@
 				<Item type="rage__NMParam">
 					<name>ftkHelperForceOnSpine</name>
 					<type>bool</type>
-					<init>true</init>
+					<init>false</init>
 					<description>Helper force applied to spine3 aswell</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>ftkLeanHelp</name>
 					<type>float</type>
-					<init>0.050</init>
+					<init>0.000</init>
 					<min value="0.00"/>
 					<max value="0.30"/>
 					<description>Help balancer lean amount - to help character lean over balance point of line between toes.  Half of this is also applied as hipLean</description>
@@ -8556,7 +8840,7 @@
 				<Item type="rage__NMParam">
 					<name>ftkSpineBend</name>
 					<type>float</type>
-					<init>-0.00</init>
+					<init>0.00</init>
 					<min value="-0.20"/>
 					<max value="0.30"/>
 					<description>Bend applied to spine when falling from knees. (+ve forward - try -0.1) (only if rds called)</description>
@@ -8800,6 +9084,22 @@
 					<description>Type of reaction</description>
 				</Item>
 				<Item type="rage__NMParam">
+					<name>ShotInGutsStomachProbability</name>
+					<type>float</type>
+					<init>0.77</init>
+					<min value="0.00"/>
+					<max value="10.00"/>
+					<description>SpineBend.</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>ShotInGutsGroinProbability</name>
+					<type>float</type>
+					<init>0.00</init>
+					<min value="0.00"/>
+					<max value="10.00"/>
+					<description>Neck Bend.</description>
+				</Item>
+				<Item type="rage__NMParam">
 					<name>sigSpineAmount</name>
 					<type>float</type>
 					<init>2.00</init>
@@ -8920,7 +9220,7 @@
 				<Item type="rage__NMParam">
 					<name>pointGun</name>
 					<type>bool</type>
-					<init>false</init>
+					<init>true</init>
 					<description>Point gun if appropriate.</description>
 				</Item>
 				<Item type="rage__NMParam">
@@ -8928,46 +9228,6 @@
 					<type>bool</type>
 					<init>true</init>
 					<description>armsWindmill if going backwards fast enough</description>
-				</Item>
-				<Item type="rage__NMParam">
-					<name>releaseWound</name>
-					<type>int</type>
-					<init>1</init>
-					<min value="0"/>
-					<max value="2"/>
-					<description>release wound if going sideways/forward fast enough.  0 = don't. 1 = only if bracing. 2 = any default arm reaction</description>
-				</Item>
-				<Item type="rage__NMParam">
-					<name>reachFalling</name>
-					<type>int</type>
-					<init>0</init>
-					<min value="0"/>
-					<max value="2"/>
-					<description>reachForWound when falling 0 = false, 1 = true, 2 = once per shot performance</description>
-				</Item>
-				<Item type="rage__NMParam">
-					<name>reachFallingWithOneHand</name>
-					<type>int</type>
-					<init>3</init>
-					<min value="0"/>
-					<max value="3"/>
-					<description>Force character to reach for wound with only one hand when falling or fallen.  0= allow 2 handed reach, 1= left only if 2 handed possible, 2= right only if 2 handed possible, 3 = one handed but automatic (allows switching of hands)</description>
-				</Item>
-				<Item type="rage__NMParam">
-					<name>reachOnFloor</name>
-					<type>int</type>
-					<init>0</init>
-					<min value="0"/>
-					<max value="2"/>
-					<description>reachForWound when on floor - 0 = false, 1 = true, 2 = once per shot performance</description>
-				</Item>
-				<Item type="rage__NMParam">
-					<name>alwaysReachTime</name>
-					<type>float</type>
-					<init>0.30</init>
-					<min value="0.0"/>
-					<max value="10.0"/>
-					<description>Inhibit arms brace for this amount of time after reachForWound has begun</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>AWSpeedMult</name>
@@ -8994,35 +9254,9 @@
 					<description>For armsWindmill, added arm stiffness ranges from 0 to AWStiffnessAdd</description>
 				</Item>
 				<Item type="rage__NMParam">
-					<name>reachWithOneHand</name>
-					<type>int</type>
-					<init>0</init>
-					<min value="0"/>
-					<max value="2"/>
-					<description>Force character to reach for wound with only one hand.  0= allow 2 handed reach, 1= left only if 2 handed possible, 2= right only if 2 handed possible</description>
-				</Item>
-				<Item type="rage__NMParam">
-					<name>allowLeftPistolRFW</name>
-					<type>bool</type>
-					<init>true</init>
-					<description>Allow character to reach for wound with left hand if holding a pistol.  It never will for a rifle. If pointGun is running this will only happen if the hand cannot point and pointGun:poseUnusedGunArm = false</description>
-				</Item>
-				<Item type="rage__NMParam">
-					<name>allowRightPistolRFW</name>
-					<type>bool</type>
-					<init>false</init>
-					<description>Allow character to reach for wound with right hand if holding a pistol. It never will for a rifle. If pointGun is running this will only happen if the hand cannot point and pointGun:poseUnusedGunArm = false</description>
-				</Item>
-				<Item type="rage__NMParam">
-					<name>rfwWithPistol</name>
-					<type>bool</type>
-					<init>false</init>
-					<description>Override pointGun and reachForWound if desired if holding a pistol.  It never will for a rifle</description>
-				</Item>
-				<Item type="rage__NMParam">
 					<name>fling2</name>
 					<type>bool</type>
-					<init>false</init>
+					<init>true</init>
 					<description>Type of reaction</description>
 				</Item>
 				<Item type="rage__NMParam">
@@ -9468,7 +9702,7 @@
 				<Item type="rage__NMParam">
 					<name>rdsForceMag</name>
 					<type>float</type>
-					<init>0.80</init>
+					<init>10.00</init>
 					<min value="0.00"/>
 					<max value="10.00"/>
 					<description></description>
@@ -9613,6 +9847,12 @@
 			<name>staggerFall</name>
 			<description>... (check docs)</description>
 			<params>
+			    <Item type="rage__NMParam">
+					<name>reachForWound</name>
+					<type>bool</type>
+					<init>true</init>
+					<description>Type of reaction</description>
+				</Item>
 				<Item type="rage__NMParam">
 					<name>armStiffness</name>
 					<type>float</type>
@@ -9728,7 +9968,7 @@
 				<Item type="rage__NMParam">
 					<name>lowerBodyStiffness</name>
 					<type>float</type>
-					<init>13.0</init>
+					<init>14.0</init>
 					<min value="0.0"/>
 					<max value="16.0"/>
 					<description>lowerBodyStiffness should be 12</description>
@@ -9744,7 +9984,7 @@
 				<Item type="rage__NMParam">
 					<name>predictionTime</name>
 					<type>float</type>
-					<init>0.10</init>
+					<init>0.1</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>amount of time (seconds) into the future that the character tries to step to. bigger values try to recover with fewer, bigger steps. smaller values recover with smaller steps, and generally recover less.</description>
@@ -9752,7 +9992,7 @@
 				<Item type="rage__NMParam">
 					<name>perStepReduction1</name>
 					<type>float</type>
-					<init>0.70</init>
+					<init>0.50</init>
 					<min value="0.0"/>
 					<max value="10.0"/>
 					<description>LowerBody stiffness will be reduced every step to make the character fallover</description>
@@ -9768,7 +10008,7 @@
 				<Item type="rage__NMParam">
 					<name>leanInDirMaxF</name>
 					<type>float</type>
-					<init>0.10</init>
+					<init>0.30</init>
 					<min value="0.0"/>
 					<max value="1.0"/>
 					<description>Max of leanInDirection magnitude when going forwards</description>
@@ -9800,7 +10040,7 @@
 				<Item type="rage__NMParam">
 					<name>lean2multF</name>
 					<type>float</type>
-					<init>-1.00</init>
+					<init>0.00</init>
 					<min value="-5.00"/>
 					<max value="5.00"/>
 					<description>Lean of spine to side in side velocity direction when going forwards</description>
@@ -9808,7 +10048,7 @@
 				<Item type="rage__NMParam">
 					<name>lean2multB</name>
 					<type>float</type>
-					<init>-2.00</init>
+					<init>0.00</init>
 					<min value="-5.00"/>
 					<max value="5.00"/>
 					<description>Lean of spine to side in side velocity direction when going backwards</description>
@@ -9840,13 +10080,13 @@
 				<Item type="rage__NMParam">
 					<name>alwaysBendForwards</name>
 					<type>bool</type>
-					<init>false</init>
+					<init>true</init>
 					<description>bend forwards at the hip (hipBendMult) whether moving backwards or forwards</description>
 				</Item>
 				<Item type="rage__NMParam">
 					<name>spineBendMult</name>
 					<type>float</type>
-					<init>0.40</init>
+					<init>0.00</init>
 					<min value="-10.0"/>
 					<max value="10.0"/>
 					<description>spine bend scaled with velocity</description>
@@ -10358,7 +10598,7 @@
 				<Item type="rage__NMParam">
 					<name>hulaPeriod</name>
 					<type>float</type>
-					<init>0.25</init>
+					<init>0.05</init>
 					<min value="0.0"/>
 					<max value="2.0"/>
 					<description>0.25 A complete wiggle will take 4*hulaPeriod</description>
@@ -10454,7 +10694,7 @@
 				<Item type="rage__NMParam">
 					<name>groundFriction</name>
 					<type>float</type>
-					<init>8.0</init>
+					<init>0.3</init>
 					<min value="0.0"/>
 					<max value="10.0"/>
 					<description>Friction multiplier on bodyParts when on ground.  Character can look too slidy with groundFriction = 1.  Higher values give a more jerky reation but this seems timestep dependent especially for dragged by the feet.</description>

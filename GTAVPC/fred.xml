@@ -2,8 +2,8 @@
 <rockstar master_version="1" representation_version="0">
   <name>Fred</name>
   <id>0</id>
-  <BodyBuoyancyMultiplier>88.5</BodyBuoyancyMultiplier>
-  <DragMultiplier>2.0</DragMultiplier>
+  <BodyBuoyancyMultiplier>38.5</BodyBuoyancyMultiplier>
+  <DragMultiplier>1.0</DragMultiplier>
   <WeightBeltMultiplier>0.0</WeightBeltMultiplier>
   <threedof name="hip_left">
     <jointNumber>0</jointNumber>
@@ -20,11 +20,11 @@
     <softlimitfirstleanmultiplier>1</softlimitfirstleanmultiplier>
     <softlimitsecondleanmultiplier>1</softlimitsecondleanmultiplier>
     <softlimittwistmultiplier>1</softlimittwistmultiplier>
-    <defaultleanforcecap>300</defaultleanforcecap>
-    <defaulttwistforcecap>300</defaulttwistforcecap>
+    <defaultleanforcecap>600</defaultleanforcecap>
+    <defaulttwistforcecap>600</defaulttwistforcecap>
     <defaultmusclestiffness>0.5</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>0</defaultmuscledamping>
   </threedof>
   <onedof name="knee_left">
     <jointNumber>1</jointNumber>
@@ -33,8 +33,8 @@
     <maxangle>0</maxangle>
     <defaultleanforcecap>1000</defaultleanforcecap>
     <defaultmusclestiffness>0.5</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>2</defaultmuscledamping>
   </onedof>
   <threedof name="ankle_left">
     <jointNumber>2</jointNumber>
@@ -51,11 +51,11 @@
     <softlimitfirstleanmultiplier>1</softlimitfirstleanmultiplier>
     <softlimitsecondleanmultiplier>1</softlimitsecondleanmultiplier>
     <softlimittwistmultiplier>1</softlimittwistmultiplier>
-    <defaultleanforcecap>300</defaultleanforcecap>
-    <defaulttwistforcecap>300</defaulttwistforcecap>
-    <defaultmusclestiffness>5</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultleanforcecap>600</defaultleanforcecap>
+    <defaulttwistforcecap>600</defaulttwistforcecap>
+    <defaultmusclestiffness>3</defaultmusclestiffness>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>0</defaultmuscledamping>
   </threedof>
   <threedof name="hip_right">
     <jointNumber>3</jointNumber>
@@ -72,11 +72,11 @@
     <softlimitfirstleanmultiplier>1</softlimitfirstleanmultiplier>
     <softlimitsecondleanmultiplier>1</softlimitsecondleanmultiplier>
     <softlimittwistmultiplier>1</softlimittwistmultiplier>
-    <defaultleanforcecap>300</defaultleanforcecap>
-    <defaulttwistforcecap>300</defaulttwistforcecap>
+    <defaultleanforcecap>600</defaultleanforcecap>
+    <defaulttwistforcecap>600</defaulttwistforcecap>
     <defaultmusclestiffness>0.5</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>0</defaultmuscledamping>
   </threedof>
   <onedof name="knee_right">
     <jointNumber>4</jointNumber>
@@ -85,8 +85,8 @@
     <maxangle>0</maxangle>
     <defaultleanforcecap>1000</defaultleanforcecap>
     <defaultmusclestiffness>0.5</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>0</defaultmuscledamping>
   </onedof>
   <threedof name="ankle_right">
     <jointNumber>5</jointNumber>
@@ -103,11 +103,11 @@
     <softlimitfirstleanmultiplier>1</softlimitfirstleanmultiplier>
     <softlimitsecondleanmultiplier>1</softlimitsecondleanmultiplier>
     <softlimittwistmultiplier>1</softlimittwistmultiplier>
-    <defaultleanforcecap>300</defaultleanforcecap>
-    <defaulttwistforcecap>300</defaulttwistforcecap>
-    <defaultmusclestiffness>5</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultleanforcecap>600</defaultleanforcecap>
+    <defaulttwistforcecap>600</defaulttwistforcecap>
+    <defaultmusclestiffness>3</defaultmusclestiffness>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>0</defaultmuscledamping>
   </threedof>
   <threedof name="spine_0">
     <jointNumber>6</jointNumber>
@@ -124,11 +124,11 @@
     <softlimitfirstleanmultiplier>1</softlimitfirstleanmultiplier>
     <softlimitsecondleanmultiplier>1</softlimitsecondleanmultiplier>
     <softlimittwistmultiplier>1</softlimittwistmultiplier>
-    <defaultleanforcecap>300</defaultleanforcecap>
-    <defaulttwistforcecap>300</defaulttwistforcecap>
-    <defaultmusclestiffness>1.5</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultleanforcecap>600</defaultleanforcecap>
+    <defaulttwistforcecap>600</defaulttwistforcecap>
+    <defaultmusclestiffness>0.95</defaultmusclestiffness>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>0</defaultmuscledamping>
   </threedof>
   <threedof name="spine_1">
     <jointNumber>7</jointNumber>
@@ -145,11 +145,11 @@
     <softlimitfirstleanmultiplier>1</softlimitfirstleanmultiplier>
     <softlimitsecondleanmultiplier>1</softlimitsecondleanmultiplier>
     <softlimittwistmultiplier>1</softlimittwistmultiplier>
-    <defaultleanforcecap>300</defaultleanforcecap>
-    <defaulttwistforcecap>300</defaulttwistforcecap>
-    <defaultmusclestiffness>1.5</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultleanforcecap>600</defaultleanforcecap>
+    <defaulttwistforcecap>600</defaulttwistforcecap>
+    <defaultmusclestiffness>0.75</defaultmusclestiffness>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>0</defaultmuscledamping>
   </threedof>
   <threedof name="spine_2">
     <jointNumber>8</jointNumber>
@@ -166,11 +166,11 @@
     <softlimitfirstleanmultiplier>1</softlimitfirstleanmultiplier>
     <softlimitsecondleanmultiplier>1</softlimitsecondleanmultiplier>
     <softlimittwistmultiplier>1</softlimittwistmultiplier>
-    <defaultleanforcecap>300</defaultleanforcecap>
-    <defaulttwistforcecap>300</defaulttwistforcecap>
-    <defaultmusclestiffness>1.5</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultleanforcecap>600</defaultleanforcecap>
+    <defaulttwistforcecap>600</defaulttwistforcecap>
+    <defaultmusclestiffness>0.75</defaultmusclestiffness>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>0</defaultmuscledamping>
   </threedof>
   <threedof name="spine_3">
     <jointNumber>9</jointNumber>
@@ -187,11 +187,11 @@
     <softlimitfirstleanmultiplier>1</softlimitfirstleanmultiplier>
     <softlimitsecondleanmultiplier>1</softlimitsecondleanmultiplier>
     <softlimittwistmultiplier>1</softlimittwistmultiplier>
-    <defaultleanforcecap>300</defaultleanforcecap>
-    <defaulttwistforcecap>300</defaulttwistforcecap>
-    <defaultmusclestiffness>1.5</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultleanforcecap>600</defaultleanforcecap>
+    <defaulttwistforcecap>600</defaulttwistforcecap>
+    <defaultmusclestiffness>0.75</defaultmusclestiffness>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>0</defaultmuscledamping>
   </threedof>
   <threedof name="clavicle_jnt_left">
     <jointNumber>10</jointNumber>
@@ -208,11 +208,11 @@
     <softlimitfirstleanmultiplier>1</softlimitfirstleanmultiplier>
     <softlimitsecondleanmultiplier>1</softlimitsecondleanmultiplier>
     <softlimittwistmultiplier>1</softlimittwistmultiplier>
-    <defaultleanforcecap>300</defaultleanforcecap>
-    <defaulttwistforcecap>300</defaulttwistforcecap>
+    <defaultleanforcecap>600</defaultleanforcecap>
+    <defaulttwistforcecap>600</defaulttwistforcecap>
     <defaultmusclestiffness>1</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>0</defaultmuscledamping>
   </threedof>
   <threedof name="shoulder_left">
     <jointNumber>11</jointNumber>
@@ -229,11 +229,11 @@
     <softlimitfirstleanmultiplier>1</softlimitfirstleanmultiplier>
     <softlimitsecondleanmultiplier>1</softlimitsecondleanmultiplier>
     <softlimittwistmultiplier>1</softlimittwistmultiplier>
-    <defaultleanforcecap>300</defaultleanforcecap>
-    <defaulttwistforcecap>300</defaulttwistforcecap>
+    <defaultleanforcecap>600</defaultleanforcecap>
+    <defaulttwistforcecap>600</defaulttwistforcecap>
     <defaultmusclestiffness>0.5</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>0</defaultmuscledamping>
   </threedof>
   <onedof name="elbow_left">
     <jointNumber>12</jointNumber>
@@ -242,8 +242,8 @@
     <maxangle>2.61799502</maxangle>
     <defaultleanforcecap>1000</defaultleanforcecap>
     <defaultmusclestiffness>0.5</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>0</defaultmuscledamping>
   </onedof>
   <threedof name="wrist_left">
     <jointNumber>13</jointNumber>
@@ -260,11 +260,11 @@
     <softlimitfirstleanmultiplier>1</softlimitfirstleanmultiplier>
     <softlimitsecondleanmultiplier>1</softlimitsecondleanmultiplier>
     <softlimittwistmultiplier>1</softlimittwistmultiplier>
-    <defaultleanforcecap>300</defaultleanforcecap>
-    <defaulttwistforcecap>300</defaulttwistforcecap>
-    <defaultmusclestiffness>10</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultleanforcecap>600</defaultleanforcecap>
+    <defaulttwistforcecap>600</defaulttwistforcecap>
+    <defaultmusclestiffness>8</defaultmusclestiffness>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>0</defaultmuscledamping>
   </threedof>
   <threedof name="clavicle_jnt_right">
     <jointNumber>14</jointNumber>
@@ -281,11 +281,11 @@
     <softlimitfirstleanmultiplier>1</softlimitfirstleanmultiplier>
     <softlimitsecondleanmultiplier>1</softlimitsecondleanmultiplier>
     <softlimittwistmultiplier>1</softlimittwistmultiplier>
-    <defaultleanforcecap>300</defaultleanforcecap>
-    <defaulttwistforcecap>300</defaulttwistforcecap>
+    <defaultleanforcecap>600</defaultleanforcecap>
+    <defaulttwistforcecap>600</defaulttwistforcecap>
     <defaultmusclestiffness>1</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>0</defaultmuscledamping>
   </threedof>
   <threedof name="shoulder_right">
     <jointNumber>15</jointNumber>
@@ -302,11 +302,11 @@
     <softlimitfirstleanmultiplier>1</softlimitfirstleanmultiplier>
     <softlimitsecondleanmultiplier>1</softlimitsecondleanmultiplier>
     <softlimittwistmultiplier>1</softlimittwistmultiplier>
-    <defaultleanforcecap>300</defaultleanforcecap>
-    <defaulttwistforcecap>300</defaulttwistforcecap>
+    <defaultleanforcecap>600</defaultleanforcecap>
+    <defaulttwistforcecap>600</defaulttwistforcecap>
     <defaultmusclestiffness>0.5</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>0</defaultmuscledamping>
   </threedof>
   <onedof name="elbow_right">
     <jointNumber>16</jointNumber>
@@ -315,8 +315,8 @@
     <maxangle>2.61799502</maxangle>
     <defaultleanforcecap>1000</defaultleanforcecap>
     <defaultmusclestiffness>0.5</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>2</defaultmuscledamping>
   </onedof>
   <threedof name="wrist_right">
     <jointNumber>17</jointNumber>
@@ -333,11 +333,11 @@
     <softlimitfirstleanmultiplier>1</softlimitfirstleanmultiplier>
     <softlimitsecondleanmultiplier>1</softlimitsecondleanmultiplier>
     <softlimittwistmultiplier>1</softlimittwistmultiplier>
-    <defaultleanforcecap>300</defaultleanforcecap>
-    <defaulttwistforcecap>300</defaulttwistforcecap>
-    <defaultmusclestiffness>10</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultleanforcecap>600</defaultleanforcecap>
+    <defaulttwistforcecap>600</defaulttwistforcecap>
+    <defaultmusclestiffness>5</defaultmusclestiffness>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>0</defaultmuscledamping>
   </threedof>
   <threedof name="neck_lower">
     <jointNumber>18</jointNumber>
@@ -354,11 +354,11 @@
     <softlimitfirstleanmultiplier>1</softlimitfirstleanmultiplier>
     <softlimitsecondleanmultiplier>1</softlimitsecondleanmultiplier>
     <softlimittwistmultiplier>1</softlimittwistmultiplier>
-    <defaultleanforcecap>300</defaultleanforcecap>
-    <defaulttwistforcecap>300</defaulttwistforcecap>
-    <defaultmusclestiffness>1.5</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultleanforcecap>600</defaultleanforcecap>
+    <defaulttwistforcecap>600</defaulttwistforcecap>
+    <defaultmusclestiffness>0.75</defaultmusclestiffness>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>0</defaultmuscledamping>
   </threedof>
   <threedof name="neck_upper">
     <jointNumber>19</jointNumber>
@@ -375,11 +375,11 @@
     <softlimitfirstleanmultiplier>1</softlimitfirstleanmultiplier>
     <softlimitsecondleanmultiplier>1</softlimitsecondleanmultiplier>
     <softlimittwistmultiplier>1</softlimittwistmultiplier>
-    <defaultleanforcecap>300</defaultleanforcecap>
-    <defaulttwistforcecap>300</defaulttwistforcecap>
-    <defaultmusclestiffness>1.5</defaultmusclestiffness>
-    <defaultmusclestrength>100</defaultmusclestrength>
-    <defaultmuscledamping>20</defaultmuscledamping>
+    <defaultleanforcecap>600</defaultleanforcecap>
+    <defaulttwistforcecap>600</defaulttwistforcecap>
+    <defaultmusclestiffness>0.75</defaultmusclestiffness>
+    <defaultmusclestrength>35</defaultmusclestrength>
+    <defaultmuscledamping>0</defaultmuscledamping>
   </threedof>
   <bodyPart name="Buttocks">
     <partNumber>0</partNumber>
