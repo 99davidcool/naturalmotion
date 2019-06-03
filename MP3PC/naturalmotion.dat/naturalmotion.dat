@@ -1,0 +1,16 @@
+#########################################
+# NATURAL MOTION
+#########################################
+#
+#  Note: The maximum of agents can be created is 24
+#
+#########################################
+
+# NAME		Number of agents
+MaleL		11
+MaleM		12
+FemH		0
+FemM		0
+IT		0
+Rod		0
+Beck		1
