@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<rage__NMBehaviorPool>
+	<behaviors>
+		<Item type="rage__NMBehavior">
+			<name>CTaskNM_RagdollDamping</name>
+			<description>Applies damping values to the ragdoll. Compatible with any game level nm behaviour task.</description>
+			<taskMessage value="true" />
+			<params>
+				<Item type="rage__NMParam">
+					<name>LinConstant</name>
+					<type>vector3</type>
+					<init>0, 0, 0</init>
+					<min value="0.0"/>
+					<max value="10.0"/>
+					<description>Linear constant damping values</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>LinVelocity</name>
+					<type>vector3</type>
+					<init>0, 0, 0</init>
+					<min value="0.0"/>
+					<max value="10.0"/>
+					<description>Linear damping based on velocity</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>LinVelocity2</name>
+					<type>vector3</type>
+					<init>0, 0, 0</init>
+					<min value="0.0"/>
+					<max value="10.0"/>
+					<description>Linear damping based on velocity squared</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>AngConstant</name>
+					<type>vector3</type>
+					<init>0, 0, 0</init>
+					<min value="0.0"/>
+					<max value="10.0"/>
+					<description>angular constant damping</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>AngVelocity</name>
+					<type>vector3</type>
+					<init>0, 0, 0</init>
+					<min value="0.0"/>
+					<max value="10.0"/>
+					<description>Angular damping based on velocity</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>AngVelocity2</name>
+					<type>vector3</type>
+					<init>0, 0, 0</init>
+					<min value="0.0"/>
+					<max value="10.0"/>
+					<description>Angular damping based on velocity squared</description>
+				</Item>
+        <Item type="rage__NMParam">
+          <name>AdaptiveAngVelocity2</name>
+          <type>bool</type>
+          <init>false</init>
+          <description>Use teh adaptive angular velocity damping mode (ramps angvel2 from the default to AngVelocity2 based on the min and max angluar velocity values</description>
+        </Item>
+        <Item type="rage__NMParam">
+          <name>AdaptiveAngVelocity2Max</name>
+          <type>float</type>
+          <init>0</init>
+          <min value="0.0"/>
+          <max value="10.0"/>
+          <description>Max angular damping based on velocity squared</description>
+        </Item>
+        <Item type="rage__NMParam">
+          <name>AdaptiveAngVelocity2_MinMag</name>
+          <type>float</type>
+          <init>0.0</init>
+          <min value="0.0"/>
+          <max value="10000.0f"/>
+          <description>the minimum of the ramp for adaptive angular velocity2</description>
+        </Item>
+        <Item type="rage__NMParam">
+          <name>AdaptiveAngVelocity2_MaxMag</name>
+          <type>float</type>
+          <init>15.0</init>
+          <min value="0.0"/>
+          <max value="10000.0f"/>
+          <description>the maximum of the ramp for adaptive angular velocity2</description>
+        </Item>
+			</params>
+		</Item>
+    <Item type="rage__NMBehavior">
+      <name>CTaskNM_UpdateCharacterHealth</name>
+      <description>Updates the characters nm health from the in-game health</description>
+      <taskMessage value="true" />
+      <params/>
+    </Item>
+	</behaviors>
+</rage__NMBehaviorPool>
