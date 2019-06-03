@@ -7,9 +7,9 @@
 #########################################
 
 # NAME		Number of agents
-MaleL		11
+MaleL		9
 MaleM		12
 FemH		1
 FemM		0
-IT			0
-Rod			0
+IT			1
+Rod			1
