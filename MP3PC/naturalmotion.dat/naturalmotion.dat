@@ -8,8 +8,8 @@
 
 # NAME		Number of agents
 MaleL		10
-MaleM		10
-FemH		2
-FemM		2
+MaleM		11
+FemH		1
+FemM		1
 IT			0
-Rod			0
+Rod			1
