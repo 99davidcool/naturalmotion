@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rage__NMBehaviorPool>
+	<behaviors>
+		<Item type="rage__NMBehavior">
+			<name>forceToBodyPart</name>
+			<description>Apply an impulse to a named body part
+</description>
+			<params>
+				<Item type="rage__NMParam">
+					<name>PartName</name>
+					<type>string</type>
+					<init>Spine3</init>
+					<description>part name</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>force</name>
+					<type>vector3</type>
+					<init>0.00, -50.00, 0.00</init>
+					<description>force to apply</description>
+				</Item>
+			</params>
+		</Item>
+		<Item type="rage__NMBehavior">
+			<name>enableIncomingTransforms</name>
+			<description></description>
+			<params>
+			</params>
+		</Item>
+		<Item type="rage__NMBehavior">
+			<name>quadDeath</name>
+			<description>Simple death behaviour.  Ramps effector strengths down over time.
+</description>
+			<params>
+				<Item type="rage__NMParam">
+					<name>startStiffness</name>
+					<type>float</type>
+					<init>10.00</init>
+					<description>Effector stiffness at start of ramping period</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>endStiffness</name>
+					<type>float</type>
+					<init>5.00</init>
+					<description>Effector stiffness at end of ramping period</description>
+				</Item>
+				<Item type="rage__NMParam">
+					<name>rampDuration</name>
+					<type>float</type>
+					<init>1.00</init>
+					<description>Length (seconds) of ramping period</description>
+				</Item>
+			</params>
+		</Item>
+	</behaviors>
+</rage__NMBehaviorPool>
