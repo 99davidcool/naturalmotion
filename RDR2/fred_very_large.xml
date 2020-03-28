@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rockstar master_version="1" representation_version="0">
+  <name>FredVlge</name>
+  <id>6</id>
+  <bodyId>14</bodyId>
+  <bodyType>biped</bodyType>
+  <num1dof>4</num1dof>
+  <num3dof>16</num3dof>
+  <numParts>21</numParts>
+  <scale>2.2</scale>  
+  <bodybouyancymultiplier>97</bodybouyancymultiplier>
+  <dragmultiplier>2</dragmultiplier>
+  <weightbeltmultiplier>0</weightbeltmultiplier>
+  <threedof name="hip_left">
+    <jointNumber>0</jointNumber>
+    <parentIndex>0</parentIndex>
+    <minfirstleanangle>-0.36192613241371</minfirstleanangle>
+    <maxfirstleanangle>1.5706804454595</maxfirstleanangle>
+    <minsecondleanangle>-0.52445855438937</minsecondleanangle>
+    <maxsecondleanangle>0.34824094474088</maxsecondleanangle>
+    <mintwistangle>-0.5235900580883</mintwistangle>
+    <maxtwistangle>0.223602861166</maxtwistangle>
+    <effectorName>hip_left</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>false</reverseSecondLeanMotor>
+    <reverseTwistMotor>false</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>300</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>0.5</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>0</exportPriority>
+  </threedof>
+  <threedof name="hip_right">
+    <jointNumber>1</jointNumber>
+    <parentIndex>0</parentIndex>
+    <minfirstleanangle>-0.36192151719664</minfirstleanangle>
+    <maxfirstleanangle>1.5706850606766</maxfirstleanangle>
+    <minsecondleanangle>-0.34833331177881</minsecondleanangle>
+    <maxsecondleanangle>0.52433131863424</maxsecondleanangle>
+    <mintwistangle>-0.22360545396805</mintwistangle>
+    <maxtwistangle>0.52359265089035</maxtwistangle>
+    <effectorName>hip_right</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>true</reverseSecondLeanMotor>
+    <reverseTwistMotor>true</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>300</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>0.5</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>1</exportPriority>
+  </threedof>
+  <threedof name="spine_0">
+    <jointNumber>2</jointNumber>
+    <parentIndex>0</parentIndex>
+    <minfirstleanangle>-0.18738460197366</minfirstleanangle>
+    <maxfirstleanangle>0.33621418819511</maxfirstleanangle>
+    <minsecondleanangle>-0.17611513237176</minsecondleanangle>
+    <maxsecondleanangle>0.17295070787254</maxsecondleanangle>
+    <mintwistangle>-0.10471975803375</mintwistangle>
+    <maxtwistangle>0.10471975803375</maxtwistangle>
+    <effectorName>spine_0</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>false</reverseSecondLeanMotor>
+    <reverseTwistMotor>false</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>300</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>1.5</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>2</exportPriority>
+  </threedof>
+  <onedof name="knee_left">
+    <jointNumber>3</jointNumber>
+    <parentIndex>1</parentIndex>
+    <minangle>-2.4434609413147</minangle>
+    <maxangle>0</maxangle>
+    <effectorName>knee_left</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>false</reverseSecondLeanMotor>
+    <reverseTwistMotor>false</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>1000</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>0.5</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>0</exportPriority>
+  </onedof>
+  <threedof name="ankle_left">
+    <jointNumber>4</jointNumber>
+    <parentIndex>4</parentIndex>
+    <minfirstleanangle>-0.70889540002011</minfirstleanangle>
+    <maxfirstleanangle>0.60010151579715</maxfirstleanangle>
+    <minsecondleanangle>-0.26514688424519</minsecondleanangle>
+    <maxsecondleanangle>0.25845190592357</maxsecondleanangle>
+    <mintwistangle>-0.52359879016876</mintwistangle>
+    <maxtwistangle>0.52359879016876</maxtwistangle>
+    <effectorName>ankle_left</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>false</reverseSecondLeanMotor>
+    <reverseTwistMotor>false</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>300</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>5</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>0</exportPriority>
+  </threedof>
+  <onedof name="knee_right">
+    <jointNumber>5</jointNumber>
+    <parentIndex>2</parentIndex>
+    <minangle>-2.4434609413147</minangle>
+    <maxangle>0</maxangle>
+    <effectorName>knee_right</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>false</reverseSecondLeanMotor>
+    <reverseTwistMotor>false</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>1000</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>0.5</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>0</exportPriority>
+  </onedof>
+  <threedof name="ankle_right">
+    <jointNumber>6</jointNumber>
+    <parentIndex>6</parentIndex>
+    <minfirstleanangle>-0.70893375616305</minfirstleanangle>
+    <maxfirstleanangle>0.60006315965421</maxfirstleanangle>
+    <minsecondleanangle>-0.2582446520559</minsecondleanangle>
+    <maxsecondleanangle>0.26535413811286</maxsecondleanangle>
+    <mintwistangle>-0.52359879016876</mintwistangle>
+    <maxtwistangle>0.52359879016876</maxtwistangle>
+    <effectorName>ankle_right</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>true</reverseSecondLeanMotor>
+    <reverseTwistMotor>true</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>300</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>5</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>0</exportPriority>
+  </threedof>
+  <threedof name="spine_1">
+    <jointNumber>7</jointNumber>
+    <parentIndex>3</parentIndex>
+    <minfirstleanangle>-0.16265875348953</minfirstleanangle>
+    <maxfirstleanangle>0.36094003667923</maxfirstleanangle>
+    <minsecondleanangle>-0.17663309757527</minsecondleanangle>
+    <maxsecondleanangle>0.17243274266902</maxsecondleanangle>
+    <mintwistangle>-0.10471975803375</mintwistangle>
+    <maxtwistangle>0.10471975803375</maxtwistangle>
+    <effectorName>spine_1</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>false</reverseSecondLeanMotor>
+    <reverseTwistMotor>false</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>300</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>1.5</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>0</exportPriority>
+  </threedof>
+  <threedof name="spine_2">
+    <jointNumber>8</jointNumber>
+    <parentIndex>8</parentIndex>
+    <minfirstleanangle>-0.16686815935631</minfirstleanangle>
+    <maxfirstleanangle>0.39163719695549</maxfirstleanangle>
+    <minsecondleanangle>-0.17657554749516</minsecondleanangle>
+    <maxsecondleanangle>0.17249029274914</maxsecondleanangle>
+    <mintwistangle>-0.17453292012215</mintwistangle>
+    <maxtwistangle>0.17453292012215</maxtwistangle>
+    <effectorName>spine_2</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>false</reverseSecondLeanMotor>
+    <reverseTwistMotor>false</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>300</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>1.5</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>0</exportPriority>
+  </threedof>
+  <threedof name="spine_3">
+    <jointNumber>9</jointNumber>
+    <parentIndex>9</parentIndex>
+    <minfirstleanangle>-0.18273891806651</minfirstleanangle>
+    <maxfirstleanangle>0.30631978511762</maxfirstleanangle>
+    <minsecondleanangle>-0.17016559638275</minsecondleanangle>
+    <maxsecondleanangle>0.17890024386154</maxsecondleanangle>
+    <mintwistangle>-0.17453292012215</mintwistangle>
+    <maxtwistangle>0.17453292012215</maxtwistangle>
+    <effectorName>spine_3</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>false</reverseSecondLeanMotor>
+    <reverseTwistMotor>false</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>300</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>1.5</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>0</exportPriority>
+  </threedof>
+  <threedof name="clavicle_jnt_left">
+    <jointNumber>10</jointNumber>
+    <parentIndex>10</parentIndex>
+    <minfirstleanangle>-0.52083665342669</minfirstleanangle>
+    <maxfirstleanangle>0.52636092691083</maxfirstleanangle>
+    <minsecondleanangle>-1.0021784706485</minsecondleanangle>
+    <maxsecondleanangle>0.083220799409195</maxsecondleanangle>
+    <mintwistangle>-0.17453292012215</mintwistangle>
+    <maxtwistangle>0.17453292012215</maxtwistangle>
+    <effectorName>clavicle_jnt_left</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>false</reverseSecondLeanMotor>
+    <reverseTwistMotor>false</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>300</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>1</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>0</exportPriority>
+  </threedof>
+  <threedof name="clavicle_jnt_right">
+    <jointNumber>11</jointNumber>
+    <parentIndex>10</parentIndex>
+    <minfirstleanangle>-0.52618253240215</minfirstleanangle>
+    <maxfirstleanangle>0.52101504793537</maxfirstleanangle>
+    <minsecondleanangle>-0.090636548877928</minsecondleanangle>
+    <maxsecondleanangle>0.99476272117975</maxsecondleanangle>
+    <mintwistangle>-0.17453292012215</mintwistangle>
+    <maxtwistangle>0.17453292012215</maxtwistangle>
+    <effectorName>clavicle_jnt_right</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>true</reverseSecondLeanMotor>
+    <reverseTwistMotor>true</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>300</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>1</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>1</exportPriority>
+  </threedof>
+  <threedof name="neck_lower">
+    <jointNumber>12</jointNumber>
+    <parentIndex>10</parentIndex>
+    <minfirstleanangle>-0.61927663482407</minfirstleanangle>
+    <maxfirstleanangle>0.25338799558898</maxfirstleanangle>
+    <minsecondleanangle>-0.27304053281843</minsecondleanangle>
+    <maxsecondleanangle>0.25055825735033</maxsecondleanangle>
+    <mintwistangle>-0.34906584024429</mintwistangle>
+    <maxtwistangle>0.34906584024429</maxtwistangle>
+    <effectorName>neck_lower</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>false</reverseSecondLeanMotor>
+    <reverseTwistMotor>false</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>300</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>0.5</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>2</exportPriority>
+  </threedof>
+  <threedof name="shoulder_left">
+    <jointNumber>13</jointNumber>
+    <parentIndex>11</parentIndex>
+    <minfirstleanangle>-0.78539336157282</minfirstleanangle>
+    <maxfirstleanangle>1.6893647866205</maxfirstleanangle>
+    <minsecondleanangle>-0.92363589698756</minsecondleanangle>
+    <maxsecondleanangle>0.80353838508642</maxsecondleanangle>
+    <mintwistangle>-1.3999984264374</mintwistangle>
+    <maxtwistangle>0.50000190734863</maxtwistangle>
+    <effectorName>shoulder_left</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>false</reverseSecondLeanMotor>
+    <reverseTwistMotor>false</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>300</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>0.5</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>0</exportPriority>
+  </threedof>
+  <onedof name="elbow_left">
+    <jointNumber>14</jointNumber>
+    <parentIndex>14</parentIndex>
+    <minangle>1.6689300537109e-006</minangle>
+    <maxangle>2.6179921627045</maxangle>
+    <effectorName>elbow_left</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>false</reverseSecondLeanMotor>
+    <reverseTwistMotor>false</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>1000</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>0.5</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>0</exportPriority>
+  </onedof>
+  <threedof name="wrist_left">
+    <jointNumber>15</jointNumber>
+    <parentIndex>15</parentIndex>
+    <minfirstleanangle>-0.5042569192773</minfirstleanangle>
+    <maxfirstleanangle>0.49574343835057</maxfirstleanangle>
+    <minsecondleanangle>-0.69999468365309</minsecondleanangle>
+    <maxsecondleanangle>1.6000035997331</maxsecondleanangle>
+    <mintwistangle>-0.89999997615814</mintwistangle>
+    <maxtwistangle>0.89999997615814</maxtwistangle>
+    <effectorName>wrist_left</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>false</reverseSecondLeanMotor>
+    <reverseTwistMotor>false</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>300</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>10</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>0</exportPriority>
+  </threedof>
+  <threedof name="shoulder_right">
+    <jointNumber>16</jointNumber>
+    <parentIndex>12</parentIndex>
+    <minfirstleanangle>-0.78540591718649</minfirstleanangle>
+    <maxfirstleanangle>1.6893522310069</maxfirstleanangle>
+    <minsecondleanangle>-0.80349342495761</minsecondleanangle>
+    <maxsecondleanangle>0.92367036669888</maxsecondleanangle>
+    <mintwistangle>-0.50000190734863</mintwistangle>
+    <maxtwistangle>1.3999984264374</maxtwistangle>
+    <effectorName>shoulder_right</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>true</reverseSecondLeanMotor>
+    <reverseTwistMotor>true</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>300</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>0.5</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>0</exportPriority>
+  </threedof>
+  <onedof name="elbow_right">
+    <jointNumber>17</jointNumber>
+    <parentIndex>17</parentIndex>
+    <minangle>1.6689300537109e-006</minangle>
+    <maxangle>2.6179921627045</maxangle>
+    <effectorName>elbow_right</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>false</reverseSecondLeanMotor>
+    <reverseTwistMotor>false</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>1000</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>0.5</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>0</exportPriority>
+  </onedof>
+  <threedof name="wrist_right">
+    <jointNumber>18</jointNumber>
+    <parentIndex>18</parentIndex>
+    <minfirstleanangle>-0.50455456705342</minfirstleanangle>
+    <maxfirstleanangle>0.49544579057445</maxfirstleanangle>
+    <minsecondleanangle>-1.6000323755466</minsecondleanangle>
+    <maxsecondleanangle>0.6999659078396</maxsecondleanangle>
+    <mintwistangle>-0.89999997615814</mintwistangle>
+    <maxtwistangle>0.89999997615814</maxtwistangle>
+    <effectorName>wrist_right</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>true</reverseSecondLeanMotor>
+    <reverseTwistMotor>true</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>300</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>10</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>0</exportPriority>
+  </threedof>
+  <threedof name="neck_upper">
+    <jointNumber>19</jointNumber>
+    <parentIndex>13</parentIndex>
+    <minfirstleanangle>-0.28517810813646</minfirstleanangle>
+    <maxfirstleanangle>0.62239308841963</maxfirstleanangle>
+    <minsecondleanangle>-0.43633231520653</minsecondleanangle>
+    <maxsecondleanangle>0.43633231520653</maxsecondleanangle>
+    <mintwistangle>-0.78539818525314</mintwistangle>
+    <maxtwistangle>0.78539818525314</maxtwistangle>
+    <effectorName>neck_upper</effectorName>
+    <limitEnabled>true</limitEnabled>
+    <createEffector>true</createEffector>
+    <reverseFirstLeanMotor>false</reverseFirstLeanMotor>
+    <reverseSecondLeanMotor>false</reverseSecondLeanMotor>
+    <reverseTwistMotor>false</reverseTwistMotor>
+    <softLimitFirstLeanMultiplier>1</softLimitFirstLeanMultiplier>
+    <softLimitSecondLeanMultiplier>1</softLimitSecondLeanMultiplier>
+    <softLimitTwistMultiplier>1</softLimitTwistMultiplier>
+    <defaultLeanForceCap>300</defaultLeanForceCap>
+    <defaultTwistForceCap>300</defaultTwistForceCap>
+    <defaultMuscleStiffness>0.5</defaultMuscleStiffness>
+    <defaultMuscleStrength>100</defaultMuscleStrength>
+    <defaultMuscleDamping>20</defaultMuscleDamping>
+    <exportPriority>0</exportPriority>
+  </threedof>
+  <bodyPart name="SKEL_PelvisBody">
+    <partNumber>0</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="4.6474597183987e-005" c1="-1.0000001192093" c2="6.2762360412971e-013" c3="0"/>
+      <r1 c0="8.9736247900873e-005" c1="4.1714698362227e-009" c2="-1.0000001192093" c3="0"/>
+      <r2 c0="1.0000001192093" c1="4.6474600821966e-005" c2="8.9736247900873e-005" c3="0"/>
+      <r3 c0="0" c1="0" c2="0" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_L_ThighBody">
+    <partNumber>1</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="0.99706041812897" c1="0.075704246759415" c2="0.011795086786151" c3="0"/>
+      <r1 c0="0.0051876800134778" c1="0.086889252066612" c2="-0.9962043762207" c3="0"/>
+      <r2 c0="-0.076441779732704" c1="0.99333721399307" c2="0.086241118609905" c3="0"/>
+      <r3 c0="-0.22103370726109" c1="0.039228498935699" c2="-0.3686640560627" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_R_ThighBody">
+    <partNumber>2</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="0.99704819917679" c1="-0.075829558074474" c2="-0.012014585547149" c3="0"/>
+      <r1 c0="-0.0053949160501361" c1="0.086904868483543" c2="-0.99620181322098" c3="0"/>
+      <r2 c0="0.076585687696934" c1="0.99332630634308" c2="0.086239263415337" c3="0"/>
+      <r3 c0="0.22115467488766" c1="0.039182532578707" c2="-0.36863216757774" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_Spine0Body">
+    <partNumber>3</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="-1.7332424249616e-005" c1="-1.0000002384186" c2="2.5605124392314e-005" c3="0"/>
+      <r1 c0="0.00011241138417972" c1="-2.5607070710976e-005" c2="-1.0000001192093" c3="0"/>
+      <r2 c0="1.0000001192093" c1="-1.7329539332422e-005" c2="0.00011241062748013" c3="0"/>
+      <r3 c0="2.4834198484314e-006" c1="0.025195708498359" c2="0.32425266504288" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_L_CalfBody">
+    <partNumber>4</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="0.99711203575134" c1="0.074521884322166" c2="0.014588406309485" c3="0"/>
+      <r1 c0="0.0051264553330839" c1="0.12561406195164" c2="-0.9920654296875" c3="0"/>
+      <r2 c0="-0.075763136148453" c1="0.98927575349808" c2="0.12486934661865" c3="0"/>
+      <r3 c0="-0.28713935613632" c1="-0.056757297366858" c2="-1.2416272163391" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_L_FootBody">
+    <partNumber>5</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="0.9998152256012" c1="-0.00014092760102358" c2="0.019220190122724" c3="0"/>
+      <r1 c0="0.019220212474465" c1="0.00013220778782852" c2="-0.99981504678726" c3="0"/>
+      <r2 c0="0.00013836726429872" c1="0.99999982118607" c2="0.00013489744742401" c3="0"/>
+      <r3 c0="-0.31650233268738" c1="0.074299849569798" c2="-1.7821229696274" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_R_CalfBody">
+    <partNumber>6</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="0.99710005521774" c1="-0.074638798832893" c2="-0.014812648296356" c3="0"/>
+      <r1 c0="-0.0053336876444519" c1="0.12562964856625" c2="-0.99206238985062" c3="0"/>
+      <r2 c0="0.075907289981842" c1="0.98926508426666" c2="0.12486729770899" c3="0"/>
+      <r3 c0="0.28736650943756" c1="-0.056817017495632" c2="-1.2415858507156" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_R_FootBody">
+    <partNumber>7</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="0.99981129169464" c1="-3.5392274639889e-006" c2="-0.019428076222539" c3="0"/>
+      <r1 c0="-0.019428076222539" c1="0.00013124631368555" c2="-0.99981105327606" c3="0"/>
+      <r2 c0="6.0838365243399e-006" c1="1" c2="0.00013114552712068" c3="0"/>
+      <r3 c0="0.31683480739594" c1="0.074234075844288" c2="-1.7820774316788" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_Spine1Body">
+    <partNumber>8</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="-5.4820309742354e-005" c1="-1.0000003576279" c2="4.6080524043646e-005" c3="0"/>
+      <r1 c0="0.00012126883666497" c1="-4.6087166992947e-005" c2="-1.0000003576279" c3="0"/>
+      <r2 c0="1.0000003576279" c1="-5.4814707254991e-005" c2="0.0001212691058754" c3="0"/>
+      <r3 c0="-6.1444734456018e-006" c1="0.023237120360136" c2="0.51700800657272" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_Spine2Body">
+    <partNumber>9</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="-0.00010227343591396" c1="-1.0000004768372" c2="4.3323860154487e-005" c3="0"/>
+      <r1 c0="7.0390873588622e-005" c1="-4.3331052438589e-005" c2="-1.0000005960464" c3="0"/>
+      <r2 c0="1.0000005960464" c1="-0.0001022703727358" c2="7.039157935651e-005" c3="0"/>
+      <r3 c0="-2.0102726921323e-005" c1="-0.012708142399788" c2="0.70663791894913" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_Spine4Body">
+    <partNumber>10</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="-0.0001987598661799" c1="-1.0000005960464" c2="6.0297545132926e-005" c3="0"/>
+      <r1 c0="8.1423087976873e-005" c1="-6.0313730500638e-005" c2="-1.0000007152557" c3="0"/>
+      <r2 c0="1.0000007152557" c1="-0.00019875494763255" c2="8.1431338912807e-005" c3="0"/>
+      <r3 c0="-4.409505345393e-005" c1="-0.05088846758008" c2="0.93985414505005" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_L_ClavicleBody">
+    <partNumber>11</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="-0.19049195945263" c1="0.97330439090729" c2="-0.12803599238396" c3="0"/>
+      <r1 c0="-0.043987914919853" c1="0.12183044105768" c2="0.99157726764679" c3="0"/>
+      <r2 c0="0.98070454597473" c1="0.19451908767223" c2="0.01960588619113" c3="0"/>
+      <r3 c0="-0.23326919972897" c1="-0.051576152443886" c2="1.1037031412125" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_R_ClavicleBody">
+    <partNumber>12</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="0.20118272304535" c1="-0.97330695390701" c2="-0.11045639961958" c3="0"/>
+      <r1 c0="0.046039763838053" c1="0.12203269451857" c2="-0.99145919084549" c3="0"/>
+      <r2 c0="0.97847294807434" c1="0.19437864422798" c2="0.069361627101898" c3="0"/>
+      <r3 c0="0.23315860331059" c1="-0.05162463337183" c2="1.1037368774414" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_Neck0Body">
+    <partNumber>13</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="1.0000005960464" c1="-0.00018757922225632" c2="5.7909015595214e-005" c3="0"/>
+      <r1 c0="0.00010777927673189" c1="0.27796763181686" c2="-0.96059113740921" c3="0"/>
+      <r2 c0="0.00016408541705459" c1="0.96059113740921" c2="0.27796772122383" c3="0"/>
+      <r3 c0="-9.9047902040184e-005" c1="-0.012313349172473" c2="1.3037805557251" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_L_UpperArmBody">
+    <partNumber>14</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="0.68194669485092" c1="0.72614061832428" c2="-0.087569914758205" c3="0"/>
+      <r1 c0="0.013577458448708" c1="-0.13227652013302" c2="-0.99111974239349" c3="0"/>
+      <r2 c0="-0.73127603530884" c1="0.67470186948776" c2="-0.10006464272738" c3="0"/>
+      <r3 c0="-0.59032583236694" c1="-0.032208316028118" c2="0.85111975669861" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_L_ForearmBody">
+    <partNumber>15</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="0.70012640953064" c1="0.59500312805176" c2="-0.39470416307449" c3="0"/>
+      <r1 c0="-0.00053815176943317" c1="-0.55235308408737" c2="-0.83360821008682" c3="0"/>
+      <r2 c0="-0.71401691436768" c1="0.58384430408478" c2="-0.38639730215073" c3="0"/>
+      <r3 c0="-0.96960371732712" c1="0.1617007702589" c2="0.51878046989441" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_L_HandBody">
+    <partNumber>16</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="0.81373661756516" c1="0.41468065977097" c2="-0.40726846456528" c3="0"/>
+      <r1 c0="-0.12424691021442" c1="-0.56039863824844" c2="-0.81884735822678" c3="0"/>
+      <r2 c0="-0.56779432296753" c1="0.71692979335785" c2="-0.40449512004852" c3="0"/>
+      <r3 c0="-1.19158411026" c1="0.38994938135147" c2="0.27575987577438" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_R_UpperArmBody">
+    <partNumber>17</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="0.68183809518814" c1="-0.72626572847366" c2="0.087378337979317" c3="0"/>
+      <r1 c0="-0.013719158247113" c1="-0.13212551176548" c2="-0.99113816022873" c3="0"/>
+      <r2 c0="0.73137468099594" c1="0.67459684610367" c2="-0.10005196928978" c3="0"/>
+      <r3 c0="0.59025573730469" c1="-0.03233103826642" c2="0.85120499134064" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_R_ForearmBody">
+    <partNumber>18</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="0.70002341270447" c1="-0.59520244598389" c2="0.39458671212196" c3="0"/>
+      <r1 c0="0.00039259722689167" c1="-0.55222952365875" c2="-0.83369052410126" c3="0"/>
+      <r2 c0="0.7141181230545" c1="0.5837584733963" c2="-0.38634040951729" c3="0"/>
+      <r3 c0="0.96962201595306" c1="0.16149920225143" c2="0.51892048120499" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_R_HandBody">
+    <partNumber>19</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="0.81368046998978" c1="-0.41490077972412" c2="0.40715658664703" c3="0"/>
+      <r1 c0="0.12407766282558" c1="-0.5603124499321" c2="-0.81893217563629" c3="0"/>
+      <r2 c0="0.56791186332703" c1="0.71686995029449" c2="-0.40443634986877" c3="0"/>
+      <r3 c0="1.191684961319" c1="0.38970166444778" c2="0.27593192458153" c3="1"/>
+    </transform>
+  </bodyPart>
+  <bodyPart name="SKEL_Neck2Body">
+    <partNumber>20</partNumber>
+    <partBouyancyMultiplier>1</partBouyancyMultiplier>
+    <transform>
+      <r0 c0="0.99999952316284" c1="0.00012906167830806" c2="2.715964546951e-005" c3="0"/>
+      <r1 c0="3.9598387957085e-005" c1="-0.09738527983427" c2="-0.99524646997452" c3="0"/>
+      <r2 c0="-0.00012580367911141" c1="0.99524652957916" c2="-0.097385205328465" c3="0"/>
+      <r3 c0="-8.7719970906619e-005" c1="0.066636733710766" c2="1.556423664093" c3="1"/>
+    </transform>
+  </bodyPart>
+</rockstar>
